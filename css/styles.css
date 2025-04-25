@@ -139,3 +139,214 @@ body {
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+/*----- under header menu -----*/
+
+.under-header {
+  display: flex;
+  gap: 30px;
+  margin-left: 50px;
+  padding: 15px 0;
+}
+
+.under-header a {
+  text-decoration: none;
+  color: #256bd1;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/*----- workout section starts -----*/
+
+.workout {
+  display: flex;
+  justify-content: space-between;
+  background-color: #757575;
+  color: white;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+.workout-text {
+  max-width: 50%;
+}
+
+.workout-text h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.workout-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.workout-image img {
+  max-width: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*----- workout section ends -----*/
+
+/*----- recent articles section starts -----*/
+
+.recent-articles {
+  background-color: #f7f8fc;
+  color: #111;
+  padding: 60px 80px;
+}
+
+.recent-articles h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: #1d2c6b;
+  margin-bottom: 40px;
+}
+
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.article-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0 10px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.article-image img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.article-image h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.article-card p {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+  border-top: 2px solid #dbe3f2;
+  padding-top: 10px;
+}
+
+.article-card a {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2a45c4;
+  text-decoration: none;
+}
+
+.article-card .meta {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #6a7ba3;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*----- recent articles section ends -----*/
+/*----- popular section starts -----*/
+
+.popular-article {
+  padding: 60px 80px;
+  background-color: #ffffff;
+}
+
+.popular-label {
+  background-color: #1d2c6b;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 25px;
+  display: inline-block;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.popular-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.popular-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.popular-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.popular-illustration {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.popular-info h4 {
+  color: #256bd1;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 10px 0 5px;
+}
+
+.popular-info h2 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #1d2c6b;
+  margin-bottom: 15px;
+}
+
+.popular-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.popular-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #6a7ba3;
+}
+
+.popular-meta a {
+  font-weight: bold;
+  color: #2a45c4;
+  text-decoration: none;
+}
+
+/*----- popular section ends -----*/
