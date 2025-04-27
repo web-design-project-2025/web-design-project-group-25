@@ -108,7 +108,7 @@ body {
   margin-bottom: 10px;
 }
 
-.buttom-icons a img {
+.bottom-icons a img {
   background: white;
   padding: 8px;
   border-radius: 50%;
@@ -398,7 +398,7 @@ body {
   max-width: 430px;
   padding: 30px;
   border-radius: 20px;
-  margin: 90px;
+  margin: 60px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -416,6 +416,7 @@ body {
   font-size: 52px;
   line-height: 1;
   color: #000;
+  margin-bottom: 10px;
 }
 
 .highlight {
@@ -427,7 +428,6 @@ body {
 .description {
   font-family: Chivo;
   font-size: 16px;
-  margin: 20px 0;
   color: #000;
 }
 
@@ -436,6 +436,114 @@ body {
   color: #1e68d3;
   text-decoration: none;
   font-weight: bold;
+}
+
+/*----- main topics section -----*/
+.main-topics {
+  text-align: center;
+  padding: 0;
+  background: white;
+  margin: 0;
+}
+
+.section-title {
+  font-family: Public Sans;
+  font-size: 18px;
+  color: #0a287e;
+  margin: 20px 0 20px 0;
+}
+
+.topics-list {
+  background-color: #1e68d3;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.topic {
+  color: white;
+  font-family: Bebas Neue;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.browse-news {
+  background-color: #fbe9e4;
+  font-family: Chivo;
+  font-size: 18px;
+  color: #0a287e;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0;
+  width: 100vw;
+}
+
+/*----- recommended articles section -----*/
+
+.recommended-articles-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.recommended-article-cards {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  height: 400px;
+  width: 350px;
+  justify-content: space-between;
+}
+
+.recommended-article-image {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.recommended-article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.recommended-article-image h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 15px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-family: Bebas Neue;
+  color: black;
+  background: white;
+}
+
+.recommended-article-cards p {
+  margin: 15px 0 0;
+  font-size: 14px;
+  font-family: Chivo;
+  line-height: 1.6;
+  padding-top: 15px;
+  border-top: 2px solid #0a287e;
+  flex-grow: 1;
+}
+
+.recommended-article-cards a {
+  margin-top: 10px;
+  font-weight: 800;
+  color: #0a287e;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 /*----- log in styling -----*/
