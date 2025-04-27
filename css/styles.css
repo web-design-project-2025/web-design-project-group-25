@@ -8,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 50px;
+  padding: 5px 40px;
   background-color: #256bd1;
 }
 
@@ -280,8 +280,7 @@ body {
 /*----- popular section starts -----*/
 
 .popular-article {
-  margin-top: 20px;
-  margin-bottom: 0px;
+  margin-top: 0px;
   background-color: #ffffff;
 }
 
@@ -319,9 +318,9 @@ body {
 
 .popular-illustration {
   position: absolute;
-  top: -50%;
-  right: 40%;
-  width: 420px;
+  top: -9%;
+  right: 10%;
+  width: 320px;
   max-width: none;
 }
 
@@ -374,7 +373,70 @@ body {
   margin-right: 30px;
 }
 
-/*----- popular section ends -----*/
+/*articles-main styling starts*/
+/*----- recommended article section -----*/
+.recommended-article {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.recommended-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.recommended-article-card {
+  position: relative;
+  z-index: 2;
+  background: white;
+  max-width: 430px;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 90px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.publicated {
+  font-size: 14px;
+  font-family: Public Sans;
+  color: #1e68d3;
+  display: flex;
+  gap: 10px;
+}
+
+.recommended-article-card h1 {
+  font-family: Barlow Condensed;
+  font-weight: 100;
+  font-size: 52px;
+  line-height: 1;
+  color: #000;
+}
+
+.highlight {
+  font-family: Bebas Neue;
+  font-weight: 52px;
+  color: #0a287e;
+}
+
+.description {
+  font-family: Chivo;
+  font-size: 16px;
+  margin: 20px 0;
+  color: #000;
+}
+
+.read-more {
+  font-family: "Chivo", sans-serif;
+  color: #1e68d3;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 /*----- log in styling -----*/
 
