@@ -687,3 +687,50 @@ a {
   color: gray;
   margin-top: 10px;
 }
+
+/*workouts styling starts*/
+
+.header2 {
+  display: flex;
+  list-style: none;
+  padding-left: 2rem;
+  font-family: Bebas Neue;
+  font-size: 20px;
+}
+.header2 a {
+  text-decoration: none;
+}
+
+.workoutH {
+  font-family: Bebas Neue;
+  font-size: 50px;
+  margin-left: 30px;
+}
+
+.workout-txt {
+  font-family: Chivo;
+  font-size: 15px;
+  margin-top: -10px;
+  margin-left: 30px;
+}
+
+.workouts-image {
+  width: 100%;
+}
+
+.days {
+  list-style: none;
+  margin-left: -320px;
+  margin-top: 2rem;
+  font-family: Chivo;
+  font-size: 15px;
+  margin-left: -300px;
+}
+
+.days2 {
+  display: flex;
+}
+
+.days a {
+  text-decoration: none;
+}
