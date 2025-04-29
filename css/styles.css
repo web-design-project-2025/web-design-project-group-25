@@ -778,10 +778,14 @@ body {
 
 main {
   display: flex;
-  justify-content: center;
+  margin-left: 0px;
   align-items: center;
   height: 600px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(0, 0, 0, 0.1);
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 250px;
 }
 
 a {
@@ -789,122 +793,91 @@ a {
 }
 
 .box {
-  background-color: white;
-  border-radius: 20px;
-  padding: 40px;
-  width: 300px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+  padding: 80px;
+  width: 350px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .box h2 {
-  color: #0033cc;
-  font-size: 22px;
+  color: #1e68d3;
+  font-size: 40px;
   margin-bottom: 30px;
-}
+  font-stretch: ultra-condensed;
+  font-family: "Bebas Neue", Arial, sans-serif;
+} /*login text */
 
 .rectangle {
   display: block;
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+  border-radius: 50px;
+
   background-color: #f9f9f9;
-  color: black;
+  color: #666;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .button {
   display: block;
   background-color: #f4dede;
-  color: #0033cc;
+  color: #1e68d3;
   padding: 10px;
   width: 100%;
-  margin-top: 10px;
-  border-radius: 10px;
+  margin-top: 20px;
+  border-radius: 40px;
+  text-align: center;
+  font-family: "Chivo", Arial, sans-serif;
+  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
 }
 
 .or-text {
   margin: 20px 0;
   font-size: 14px;
   color: #666;
+  text-align: center;
+  font-family: "Chivo", Arial, sans-serif;
 }
 
 .icons-second {
-  font-size: 30px;
-  margin: 10px 10px 20px;
-}
-
-.login-link {
-  display: inline-block;
-  font-size: 14px;
-  color: gray;
-  margin-top: 10px;
-}
-
-/*----- create account page ------*/
-main {
+  margin: 20px auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 600px;
-  background-color: rgba(255, 255, 255, 0.5);
+  gap: 20px;
 }
 
-a {
+.icons-second img {
+  width: 40px;
+  height: 40px;
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.login {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+
+.login a {
+  margin: 0 5px;
   text-decoration: none;
 }
+.log-in a {
+  text-decoration: none;
+  color: #007bff;
+}
 
-.box {
-  background-color: white;
-  border-radius: 20px;
-  padding: 40px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h2 {
   text-align: center;
+  font-family: "Chivo", Arial, sans-serif;
 }
 
-.box h2 {
-  color: #0033cc;
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-
-.rectangle {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
-  color: black;
-}
-
-.button {
-  display: block;
-  background-color: #f4dede;
-  color: #0033cc;
-  padding: 10px;
-  width: 100%;
-  margin-top: 10px;
-  border-radius: 10px;
-}
-
-.or-text {
-  margin: 20px 0;
-  font-size: 14px;
-  color: #666;
-}
-
-.icons-second {
-  font-size: 30px;
-  margin: 10px 10px 20px;
-}
-
-.login-link {
-  display: inline-block;
-  font-size: 14px;
-  color: gray;
-  margin-top: 10px;
-}
