@@ -243,7 +243,7 @@ body {
   padding: 15px;
   font-size: 28px;
   letter-spacing: 1px;
-  font-weight: 800;
+  font-weight: 100;
   font-family: Bebas Neue;
   color: white;
   background: linear-gradient(to top, #0a287e 0%, transparent 100%);
@@ -567,7 +567,7 @@ body {
   color: #0a287e;
   font-size: 18px;
   line-height: 1.6;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .health-text h1 {
@@ -595,13 +595,13 @@ body {
 
 /*----- recent articles health section -----*/
 
-.recent-articles {
+.recent-articles-health {
   background-color: #f5f5f5;
   color: #111;
   padding: 60px 80px;
 }
 
-.recent-articles h2 {
+.recent-articles-health h2 {
   font-family: Chivo;
   text-align: center;
   font-size: 32px;
@@ -610,41 +610,41 @@ body {
   margin-bottom: 50px;
 }
 
-.article-list {
+.article-list-health {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 30px;
 }
 
-.article-card {
+.article-card-health {
   display: flex;
   flex-direction: column;
   background: transparent;
 }
 
-.article-image {
+.article-image-health {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
 }
 
-.article-image img {
+.article-image-health img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 12px;
 }
 
-.article-image h3 {
+.article-image-health h3 {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   margin: 0;
   padding: 15px;
-  font-size: 28px;
+  font-size: 26px;
   letter-spacing: 1px;
-  font-weight: 800;
+  font-weight: 100;
   font-family: Bebas Neue;
   color: white;
   background: linear-gradient(to top, #0a287e 0%, transparent 100%);
@@ -652,7 +652,7 @@ body {
   border-radius: 0 0 12px 12px;
 }
 
-.article-card p {
+.article-card-health p {
   margin: 15px 0 0;
   font-size: 14px;
   font-family: Chivo;
@@ -661,7 +661,7 @@ body {
   border-top: 2px solid #0a287e;
 }
 
-.article-card a {
+.article-card-health a {
   margin-top: 10px;
   font-weight: 800;
   color: #0a287e;
@@ -669,13 +669,21 @@ body {
   font-size: 14px;
 }
 
-.article-card .meta {
+.article-card-health .meta {
   margin-top: 10px;
   font-size: 13px;
   font-family: Public Sans;
   color: #0a287e;
   display: flex;
   justify-content: space-between;
+}
+
+.article-card-health .meta a {
+  font-weight: normal;
+  color: #0a287e;
+  text-decoration: none;
+  font-family: Public Sans;
+  font-size: 13px;
 }
 
 /*----- popular health section starts -----*/
@@ -710,7 +718,7 @@ body {
   object-fit: cover;
 }
 
-.popular-info {
+.popular-info-health {
   position: relative;
   flex: 1;
   min-width: 300px;
@@ -719,34 +727,37 @@ body {
 
 .popular-illustration {
   position: absolute;
-  top: -9%;
-  right: 10%;
+  right: 0px;
   width: 320px;
   max-width: none;
 }
 
-.popular-info h4:first-of-type {
-  margin-top: 140px;
-  margin-bottom: -35px;
+.popular-info-health h4:first-of-type {
+  margin-top: 80px;
+  margin-bottom: 0px;
 }
 
-.popular-info h4 {
+.popular-info-health h4 {
   color: #256bd1;
-  font-size: 24px;
+  font-size: 36px;
   font-family: Bebas Neue;
   letter-spacing: 1px;
-  margin: -20px 0 10px;
+  margin: 10px 0;
+  max-width: 320px;
+  margin-top: 0px;
 }
 
-.popular-info h2 {
-  font-size: 38px;
+.popular-info-health h2 {
+  font-size: 42px;
   font-family: Bebas Neue;
   letter-spacing: 1px;
   color: #1d2c6b;
-  margin-bottom: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 470px;
 }
 
-.popular-info p {
+.popular-info-health p {
   font-size: 16px;
   font-family: Chivo;
   line-height: 1.6;
@@ -880,4 +891,3 @@ h2 {
   text-align: center;
   font-family: "Chivo", Arial, sans-serif;
 }
-
