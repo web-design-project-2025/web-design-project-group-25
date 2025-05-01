@@ -785,6 +785,49 @@ body {
   margin-right: 30px;
 }
 
+/*articles-health styling starts*/
+/*highlighted-nutrition-article*/
+
+.highlighted-nutrition-article {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.highlighted-image-nutrition img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  display: block;
+}
+
+.highlighted-text-nutrition-background {
+  position: absolute;
+  top: 380px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to top, #0a287e 0%, transparent 100%);
+}
+
+.highlighted-text-nutrition {
+  position: absolute;
+  font-family: Bebas Neue;
+  font-size: 36px;
+  top: 50%;
+  left: 5%;
+  letter-spacing: 1px;
+  color: white;
+  max-width: 700px;
+}
+
 /*----- log in styling -----*/
 
 main {
