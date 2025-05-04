@@ -8,11 +8,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 40px;
   background-color: #256bd1;
 }
 
 .logo {
+  padding: 5px 20px;
   width: 150px;
   height: 60px;
   margin: none;
@@ -46,20 +46,19 @@ body {
 
 .icons {
   background-color: #e6f0ff;
-  border-radius: 999px;
-  padding: 10px 20px;
+  padding: 10px 5px;
   display: flex;
   align-items: center;
-  margin-right: -70px;
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
 }
 
 .icons img {
   border-radius: 50%;
   width: 26px;
   height: 26px;
-  padding: -20px;
   object-fit: contain;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .text {
@@ -990,21 +989,42 @@ body {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  font-family: Public Sans;
+  font-family: Chivo;
   font-weight: bold;
 }
 
-/*articles-health styling starts*/
+/*exrcises styling starts*/
 /* equipment options */
 
+.main-content-exercises {
+  display: flex;
+  gap: 40px;
+}
+
+.equipment-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.equipment-heading h1 {
+  font-family: Bebas Neue;
+  font-size: 36px;
+  color: #0a287e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .equipment-categories {
-  margin: 30px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  max-width: 700px;
+  column-gap: 120px;
+  row-gap: 20px;
   text-align: center;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 .category {
@@ -1015,8 +1035,8 @@ body {
 }
 
 .category img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
 }
 
@@ -1032,6 +1052,60 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.view-more-equipment button {
+  width: 160px;
+  background-color: #1e68d3;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: Chivo;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.view-more-equipment img {
+  width: 50px;
+  height: 50px;
+}
+
+/* muscle group */
+
+.muscle-groups {
+  background-color: #fafaf9;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.muscle-groups-heading {
+  text-align: center;
+}
+
+.muscle-groups-heading h1 {
+  font-family: Bebas Neue;
+  font-size: 36px;
+  color: #0a287e;
+  margin-bottom: 10px;
+}
+
+.muscle-groups-heading h2 {
+  font-family: Public Sans;
+  font-size: 18px;
+  color: #0a287e;
+  margin: 0;
+}
+
+.muscle-groups-image img {
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
 }
 
 /*----- log in styling -----*/
