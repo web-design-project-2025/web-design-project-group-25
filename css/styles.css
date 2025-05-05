@@ -14,7 +14,6 @@ body {
 
 .logo {
   width: 150px;
-  height: 60px;
   margin: none;
 }
 
@@ -718,19 +717,33 @@ a {
   width: 100%;
 }
 
+.main-content-workout {
+  background-color: #e7f3f8;
+}
+
 .days {
   list-style: none;
-  margin-left: -320px;
+  margin-left: -100px;
   margin-top: 2rem;
   font-family: Chivo;
   font-size: 15px;
-  margin-left: -300px;
-}
-
-.days2 {
-  display: flex;
 }
 
 .days a {
   text-decoration: none;
+}
+
+.italic {
+  font-style: italic;
+  font-size: 10pt;
+}
+
+.info {
+  display: flex;
+  font-family: Bebas Neue;
+  font-size: 14pt;
+}
+
+.info-spacing {
+  padding-left: 3rem;
 }
