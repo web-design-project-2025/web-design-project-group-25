@@ -1122,6 +1122,14 @@ main {
   margin-bottom: 250px;
 }
 
+.login-background {
+  background-image: url("../images/login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 a {
   text-decoration: none;
 }
@@ -1163,9 +1171,9 @@ a {
   margin-top: 20px;
   border-radius: 40px;
   text-align: center;
-  font-family: "Chivo", Arial, sans-serif;
+  font-family: "Chivo";
   box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .or-text {
@@ -1173,7 +1181,7 @@ a {
   font-size: 14px;
   color: #666;
   text-align: center;
-  font-family: "Chivo", Arial, sans-serif;
+  font-family: "Chivo";
 }
 
 .icons-second {
@@ -1205,6 +1213,7 @@ a {
   margin: 0 5px;
   text-decoration: none;
 }
+
 .log-in a {
   text-decoration: none;
   color: #007bff;
@@ -1212,5 +1221,70 @@ a {
 
 h2 {
   text-align: center;
-  font-family: "Chivo", Arial, sans-serif;
+  font-family: "Chivo";
 }
+
+/*about us page*/
+.about-page {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin: 80px 0;
+}
+
+.user-card {
+  text-align: center;
+  font-family: "Bebas Neue";
+}
+
+.user-card img {
+  width: 150px;
+  height: 200px;
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-name {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 32px;
+  color: #1e68d3;
+}
+
+.user-title {
+  margin: 0;
+  font-size: 28px;
+  color: #444;
+}
+.SS-description {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.SS-description p {
+  font-size: 22px;
+}
+.about-page-buttom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 950px;
+  margin: 150px auto 50px auto;
+  gap: 40px;
+}
+.about-page-buttom a {
+  font-family: "Chivo", Arial, sans-serif;
+  font-size: 20px;
+}
+.about-page-icons img {
+  width: 50px;
+  margin-top: 10px;
+}
+.about-page-buttom-right p {
+  margin-left: 0;
+  font-family: "Chivo", Arial, sans-serif;
+  text-align: left;
+}
+/**/
