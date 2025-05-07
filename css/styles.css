@@ -843,3 +843,22 @@ a {
 .exemples p {
   color: #fff;
 }
+
+/*----- Home styling -----*/
+.home-header h1 {
+  font-family: Bebas Neue;
+  font-weight: 100;
+  font-size: 56pt;
+  text-align: center;
+  color: white;
+  translate: 0px -400px;
+  margin: 0px 0px;
+}
+.home-header h2 {
+  font-family: Public Sans;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  translate: 0px -400px;
+  margin: 5px 5px;
+}
