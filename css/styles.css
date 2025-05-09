@@ -848,7 +848,7 @@ a {
 .home-header h1 {
   font-family: Bebas Neue;
   font-weight: 100;
-  font-size: 56pt;
+  font-size: 48pt;
   text-align: center;
   color: white;
   translate: 0px -400px;
@@ -863,16 +863,73 @@ a {
   margin: 5px 5px;
 }
 
-.home-icons img {
-  width: 10%;
-  height: auto;
-  margin: 200px 200px;
-}
-
 .home-icons {
   text-align: center;
 }
 
-.home-icons-sections {
+.home-icons img {
+  width: 10%;
+  height: auto;
+}
+
+.home-header1 {
+  color: #0a287e;
+  font-family: Chivo;
+  font-size: 18pt;
+}
+
+.home-icons p {
+  font-family: Public Sans;
+  font-size: 12pt;
+  margin: 30px;
+  max-width: 550px;
+}
+
+.home-icons-flex {
   display: flex;
+  translate: 0px -200px;
+}
+
+.home-read-more a {
+  background-color: #1e68d3;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.home-workouts {
+  background: #ddf2ff;
+  padding-left: 20px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.home-workouts h1 {
+  font-family: Bebas Neue;
+  font-weight: 100;
+  font-size: 48pt;
+  color: white;
+  max-width: 600px;
+}
+
+.home-workouts p {
+  color: #0a287e;
+  font-family: Chivo;
+  font-size: 12pt;
+  max-width: 500px;
+}
+
+.home-workouts img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.home-star {
+  padding: 0px;
+  translate: -120px 10px;
 }
