@@ -862,3 +862,17 @@ a {
   translate: 0px -400px;
   margin: 5px 5px;
 }
+
+.home-icons img {
+  width: 10%;
+  height: auto;
+  margin: 200px 200px;
+}
+
+.home-icons {
+  text-align: center;
+}
+
+.home-icons-sections {
+  display: flex;
+}
