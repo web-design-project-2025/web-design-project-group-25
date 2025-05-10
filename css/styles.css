@@ -933,3 +933,84 @@ a {
   padding: 0px;
   translate: -120px 10px;
 }
+
+.home-muscle-groups {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.home-muscle-groups p {
+  margin-top: 10px;
+  max-width: 340px;
+  text-align: left;
+}
+
+.home-muscle-groups h1 {
+  font-family: Bebas Neue;
+  font-size: 48px;
+  font-weight: 100;
+  margin: 0px;
+  color: #0a287e;
+  max-width: 400px;
+  text-align: right;
+  position: absolute;
+  right: 30px;
+}
+
+.home-muscle-groups-img-flex {
+  display: flex;
+}
+.home-muscle-groups-img {
+  margin-top: 70px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.home-muscle-groups-img p {
+  font-family: Public Sans;
+  color: #0a287e;
+  font-size: 16pt;
+}
+
+.home-muscle-groups-img img {
+  width: 75%;
+}
+
+.home-header2 {
+  color: #0a287e;
+  font-family: Chivo;
+  font-size: 14pt;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-collage {
+  display: flex;
+  margin-top: 50px;
+}
+
+.home-collage1 {
+  display: block;
+}
+
+.home-header3 {
+  max-width: 400px;
+  text-align: right;
+  position: absolute;
+  right: 30px;
+}
+
+.home-header3 h1 {
+  font-size: 36pt;
+  font-weight: 100;
+  font-family: Bebas Neue;
+  color: #0a287e;
+}
+
+.home-header3 p {
+  font-weight: 10;
+  font-size: 18pt;
+  font-family: Bebas Neue;
+  color: #0a287e;
+}
