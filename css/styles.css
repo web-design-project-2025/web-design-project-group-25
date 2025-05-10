@@ -914,7 +914,7 @@ body {
   font-size: 13px;
 }
 
-/*articles-health styling starts*/
+/*articles-health-nutrition styling starts*/
 /*highlighted nutrition article*/
 
 .highlighted-nutrition-article {
@@ -1123,6 +1123,60 @@ body {
   font-weight: bold;
 }
 
+/*responsiveness for articles-health-nutrition */
+@media (max-width: 768px) {
+  .highlighted-nutrition-article {
+    height: 320px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .highlighted-text-nutrition {
+    font-size: 20px;
+    top: 55%;
+    max-width: 90%;
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .highlighted-text-nutrition-background {
+    top: 160px;
+    padding: 90px 0;
+  }
+
+  .highlighted-image-nutrition img {
+    object-position: center;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .nutrition-articles-section,
+  .top-comments {
+    width: 100%;
+  }
+
+  .top-comments-profiles {
+    width: 100%;
+  }
+
+  .nutrition-article {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .nutrition-article img {
+    width: 350px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .nutrition-article-text p {
+    width: 100%;
+  }
+}
+
 /*exrcises styling starts*/
 /* equipment options */
 
@@ -1236,6 +1290,47 @@ body {
   max-width: 500px;
   height: auto;
   object-fit: contain;
+}
+
+/* responsiveness for exercise page */
+@media (max-width: 956px) {
+  .main-content-exercises {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .equipment-section,
+  .muscle-groups {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .equipment-categories {
+    column-gap: 40px;
+    row-gap: 30px;
+  }
+
+  .category img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .view-more-equipment button {
+    margin-bottom: 40px;
+  }
+
+  .muscle-groups-image img {
+    max-width: 300px;
+  }
+
+  .equipment-heading h1,
+  .muscle-groups-heading h1 {
+    font-size: 28px;
+  }
+
+  .muscle-groups-heading h2 {
+    font-size: 16px;
+  }
 }
 
 /*----- log in styling -----*/
