@@ -833,18 +833,46 @@ a {
 }
 
 @media screen and (max-width: 1100px) {
+  .workoutH {
+    margin-top: -160px;
+  }
+  .days {
+    padding-top: 400px;
+    translate: -80px -200px;
+  }
+  .days li {
+    padding-left: 10px;
+    font-size: 8pt;
+    margin-top: 1rem;
+  }
+
   .workouts-background {
-    padding-left: 350px;
-    margin-top: -190px;
-    margin-bottom: 0px;
-    padding-top: 300px;
-    padding-bottom: 110px;
+    flex-direction: column;
+    margin-top: -70px;
   }
   .exercises-workout {
     padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -100px;
+    margin-top: -400px;
+    margin-bottom: 500px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 12px;
   }
-  .days li {
-    font-size: 10pt;
-    translate: 70px 0px;
+  .info-spacing {
+    padding-left: 1rem;
+  }
+  .info h1 {
+    font-size: 8pt;
+  }
+  .info p {
+    font-size: 8pt;
+  }
+  .italic p {
+    font-size: 5pt;
+  }
+  .exercises-header p {
+    font-size: 24pt;
   }
 }
