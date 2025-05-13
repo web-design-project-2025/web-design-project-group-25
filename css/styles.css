@@ -820,6 +820,41 @@ body {
   border-bottom-right-radius: 50px;
 }
 
+/*responsiveness for the top part of the page*/
+@media (max-width: 768px) {
+  .health-text {
+    position: static;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  .health-text h1 {
+    font-size: 48px;
+  }
+
+  .health-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .health-text h1 {
+    font-size: 29px;
+  }
+
+  .health-text p {
+    font-size: 10px;
+  }
+
+  .health-image img {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}
+
 /*----- recent articles health section -----*/
 
 .recent-articles-health {
@@ -1123,7 +1158,7 @@ body {
 }
 
 /*responsiveness for articles-health-nutrition */
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .highlighted-nutrition-article {
     height: 320px;
     border-bottom-left-radius: 30px;
