@@ -14,7 +14,6 @@ body {
 .logo {
   padding: 5px 20px;
   width: 150px;
-  height: 60px;
   margin: none;
 }
 
@@ -1215,43 +1214,355 @@ h2 {
   font-family: "Chivo", Arial, sans-serif;
 }
 
-/* Responsiveness */
+/*----- Workouts styling -----*/
 
-.menu-toggle {
-  display: none;
+.workouts-header {
+  display: flex;
+  list-style: none;
+  padding-right: 2rem;
+  font-family: Bebas Neue;
+  font-size: 20px;
+  margin-top: -325px;
+  color: white;
+}
+.workouts-header a {
+  text-decoration: none;
 }
 
-.burger-menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
+.workoutH {
+  font-family: Bebas Neue;
+  font-weight: 100;
+  color: white;
+  font-size: 50px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  margin-top: 100px;
 }
 
-.burger-menu .bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  border-radius: 5px;
+.workout-txt {
+  font-family: Chivo;
+  color: white;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 30px;
 }
 
-/* Hide nav by default on mobile */
-@media (max-width: 768px) {
-  .nav {
-    display: none;
+.workout-txt-margin {
+  margin-bottom: 87px;
+}
+
+.workouts-image {
+  width: 100%;
+}
+
+.workouts-background {
+  background: #e6f2f8;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.days {
+  margin-top: 50px;
+  padding-left: 0px;
+  margin-left: 10px;
+}
+
+.days li {
+  list-style: none;
+  margin-top: 2rem;
+  font-family: Chivo;
+  font-size: 18px;
+  color: #1e61d3;
+}
+
+.days a {
+  text-decoration: none;
+}
+
+.exercises-workout {
+  background: #0a287e;
+  margin-left: 100px;
+  padding-left: 170px;
+  padding-right: 431px;
+}
+
+.exercises-header {
+  font-family: Bebas Neue;
+  font-size: 56pt;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.exercises-header p {
+  margin-bottom: 10px;
+}
+
+.italic {
+  padding: 5px 7px;
+  border-top-right-radius: 30px;
+  border: 1.5px solid white;
+  color: #fff;
+}
+
+.italic p {
+  font-style: italic;
+  font-size: 10pt;
+}
+
+.info p {
+  display: flex;
+  font-family: Bebas Neue;
+  font-size: 14pt;
+  font-weight: 100;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.info {
+  display: flex;
+  background-color: #e6f2f8;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 2px solid #0a287e;
+  color: #0a287e;
+}
+
+.info h1 {
+  display: flex;
+  font-family: Bebas Neue;
+  font-size: 14pt;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  font-weight: 100;
+}
+
+.info-spacing {
+  padding-left: 3rem;
+}
+
+.examples {
+  background-color: #1e68d3;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.examples-top {
+  background-color: #1e68d3;
+  border-bottom: 1px solid white;
+  border-top: 1px solid #1e68d3;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.examples-bottom {
+  background-color: #1e68d3;
+  border-top: 1px solid white;
+  color: #fff;
+  border-bottom-right-radius: 30px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  margin-bottom: 70px;
+}
+
+.exemples p {
+  color: #fff;
+}
+
+/*----- Home styling -----*/
+
+.home-header h1 {
+  font-family: Bebas Neue;
+  font-weight: 100;
+  font-size: 48pt;
+  text-align: center;
+  color: white;
+  translate: 0px -400px;
+  margin: 0px 0px;
+}
+.home-header h2 {
+  font-family: Public Sans;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  translate: 0px -400px;
+  margin: 5px 5px;
+}
+
+.home-icons {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.home-icons img {
+  width: 10%;
+  height: auto;
+}
+
+.home-header1 {
+  color: #0a287e;
+  font-family: Chivo;
+  font-size: 18pt;
+}
+
+.home-icons p {
+  font-family: Public Sans;
+  font-size: 12pt;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.home-icons-flex {
+  display: flex;
+  translate: 0px -100px;
+}
+
+.home-read-more a {
+  background-color: #1e68d3;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.home-workouts {
+  background: #ddf2ff;
+  padding-left: 20px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.home-workouts h1 {
+  font-family: Bebas Neue;
+  font-weight: 100;
+  font-size: 48pt;
+  color: white;
+  max-width: 600px;
+}
+
+.home-workouts p {
+  color: #0a287e;
+  font-family: Chivo;
+  font-size: 12pt;
+  max-width: 500px;
+}
+
+.home-workouts img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.home-star {
+  padding: 0px;
+  translate: -120px 10px;
+}
+
+.home-muscle-groups {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.home-muscle-groups p {
+  margin-top: 10px;
+  max-width: 340px;
+  text-align: left;
+}
+
+.home-muscle-groups h1 {
+  font-family: Bebas Neue;
+  font-size: 48px;
+  font-weight: 100;
+  margin: 0px;
+  color: #0a287e;
+  max-width: 400px;
+  text-align: right;
+  position: absolute;
+  right: 30px;
+}
+
+.home-muscle-groups-img-flex {
+  display: flex;
+}
+.home-muscle-groups-img {
+  margin-top: 70px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.home-muscle-groups-img p {
+  font-family: Public Sans;
+  color: #0a287e;
+  font-size: 16pt;
+}
+
+.home-muscle-groups-img img {
+  width: 75%;
+}
+
+.home-header2 {
+  color: #0a287e;
+  font-family: Chivo;
+  font-size: 14pt;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-collage {
+  display: flex;
+  margin-top: 50px;
+}
+
+.home-collage1 {
+  display: block;
+}
+
+.home-header3 {
+  max-width: 400px;
+  text-align: right;
+  position: absolute;
+  right: 30px;
+}
+
+.home-header3 h1 {
+  font-size: 36pt;
+  font-weight: 100;
+  font-family: Bebas Neue;
+  color: #0a287e;
+}
+
+.home-header3 p {
+  font-weight: 10;
+  font-size: 18pt;
+  font-family: Bebas Neue;
+  color: #0a287e;
+}
+
+@media screen and (max-width: 900px) {
+  .home-icons-flex {
     flex-direction: column;
     align-items: center;
-    background-color: #256bd1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-img {
     width: 100%;
-    padding: 20px 0;
   }
-
-  .burger-menu {
-    display: flex;
+  .home-header {
+    translate: 0px 200px;
+    margin-bottom: 100px;
   }
-
-  /* When checkbox is checked, show nav */
-  .menu-toggle:checked + .burger-menu + .nav {
-    display: flex;
+  .home-header h1 {
+    font-size: 30pt;
+  }
+  .home-header h2 {
+    font-size: 12pt;
   }
 }
