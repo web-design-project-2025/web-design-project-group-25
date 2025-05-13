@@ -1,18 +1,18 @@
 /*header starts*/
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 40px;
   background-color: #256bd1;
 }
 
 .logo {
+  padding: 5px 20px;
   width: 150px;
   margin: none;
 }
@@ -45,20 +45,19 @@ body {
 
 .icons {
   background-color: #e6f0ff;
-  border-radius: 999px;
-  padding: 10px 20px;
+  padding: 10px 5px;
   display: flex;
   align-items: center;
-  margin-right: -70px;
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
 }
 
 .icons img {
   border-radius: 50%;
   width: 26px;
   height: 26px;
-  padding: -20px;
   object-fit: contain;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .text {
@@ -157,30 +156,35 @@ body {
 
 .workout {
   position: relative;
-  height: 100vh;
+  min-height: 400px;
   overflow: hidden;
 }
 
 .workout-text p {
   font-family: Public Sans;
+  color: white;
   font-size: 18px;
   line-height: 1.6;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .workout-text h1 {
   font-family: Bebas Neue;
   font-size: 72px;
   letter-spacing: 1px;
+  margin-top: 18px;
   margin-bottom: 0px;
 }
 
 .workout-text {
   position: absolute;
   left: 2%;
+  top: 10%;
   color: white;
   max-width: 600px;
-  padding: 30px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  background: rgba(30, 104, 211, 0.7);
 }
 
 .workout-image img {
@@ -242,7 +246,7 @@ body {
   padding: 15px;
   font-size: 28px;
   letter-spacing: 1px;
-  font-weight: 800;
+  font-weight: 100;
   font-family: Bebas Neue;
   color: white;
   background: linear-gradient(to top, #0a287e 0%, transparent 100%);
@@ -376,7 +380,7 @@ body {
 /*----- recommended article section -----*/
 .recommended-article {
   position: relative;
-  height: 100vh;
+  height: 50vh;
   overflow: hidden;
 }
 
@@ -435,6 +439,61 @@ body {
   color: #1e68d3;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* responsiveness articles-main */
+/* recommended section*/
+@media (max-width: 768px) {
+  .recommended-article {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .recommended-background {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .recommended-article-card {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .recommended-article-card h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .recommended-article-card p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .read-more {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .recommended-article {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .recommended-background {
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .recommended-article-card {
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    text-align: center;
+  }
 }
 
 /*----- main topics section -----*/
@@ -552,14 +611,739 @@ body {
   font-size: 14px;
 }
 
+/* popular article section */
+
+.popular-section {
+  padding: 40px 0px;
+  background-color: white;
+}
+
+.popular-label {
+  background-color: #052d7c;
+  color: white;
+  font-family: Bebas Neue;
+  font-size: 26px;
+  padding: 8px 30px;
+  display: inline-block;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-bottom: 30px;
+}
+
+.popular-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.popular-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.popular-image img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.popular-image,
+.popular-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.popular-text {
+  flex: 1;
+  max-width: 650px;
+  position: relative;
+}
+
+.popular-text .graphics {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.popular-text h3 {
+  font-family: Bebas Neue;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #1e68d3;
+  margin-bottom: 16px;
+}
+
+.popular-text h3 span {
+  font-family: Bebas Neue;
+  font-size: 26px;
+  color: #052d7c;
+}
+
+.popular-text p {
+  font-family: Public Sans;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 20px;
+  max-width: 330px;
+}
+
+.popular-text .read-more {
+  font-family: Chivo;
+  font-weight: bold;
+  color: #0a287e;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.heading-row {
+  display: block;
+}
+
+.popular-meta {
+  font-family: Public Sans;
+  font-size: 12px;
+  color: #0a287e;
+  display: flex;
+  gap: 10px;
+}
+
+/*responsiveness for this section*/
+@media screen and (max-width: 768px) {
+  .popular-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .popular-image,
+  .popular-text {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .popular-text h2 {
+    font-size: 22px;
+  }
+
+  .popular-text p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .popular-text .graphics {
+    position: relative;
+    width: 100px;
+    flex-shrink: 0;
+    margin: 0;
+    display: block;
+  }
+
+  .popular-label {
+    font-size: 24px;
+    padding: 8px 20px;
+  }
+
+  .popular-meta {
+    flex-direction: column;
+  }
+
+  .heading-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .heading-row .graphics {
+    width: 60px;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .heading-row h3 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+
+/*articles-health styling starts*/
+/*----- health section -----*/
+
+.health {
+  position: relative;
+  overflow: hidden;
+}
+
+.health-text p {
+  font-family: Public Sans;
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.health-text h1 {
+  font-family: Bebas Neue;
+  font-size: 72px;
+  letter-spacing: 1px;
+  margin-top: 18px;
+  margin-bottom: 0px;
+}
+
+.health-text {
+  position: absolute;
+  left: 2%;
+  top: 10%;
+  color: white;
+  max-width: 600px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  background: rgba(30, 104, 211, 0.7);
+}
+
+.health-image img {
+  width: 100%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+/*----- recent articles health section -----*/
+
+.recent-articles-health {
+  background-color: #f5f5f5;
+  color: #111;
+  padding: 60px 80px;
+}
+
+.recent-articles-health h2 {
+  font-family: Chivo;
+  text-align: center;
+  font-size: 32px;
+  color: #1d2c6b;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.article-list-health {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.article-card-health {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.article-image-health {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.article-image-health img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.article-image-health h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 15px;
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-family: Bebas Neue;
+  color: white;
+  background: linear-gradient(to top, #0a287e 0%, transparent 100%);
+  line-height: 1.2;
+  border-radius: 0 0 12px 12px;
+}
+
+.article-card-health p {
+  margin: 15px 0 0;
+  font-size: 14px;
+  font-family: Chivo;
+  line-height: 1.6;
+  padding-top: 15px;
+  border-top: 2px solid #0a287e;
+}
+
+.article-card-health a {
+  margin-top: 10px;
+  font-weight: 800;
+  color: #0a287e;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.article-card-health .meta {
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: Public Sans;
+  color: #0a287e;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-card-health .meta a {
+  font-weight: normal;
+  color: #0a287e;
+  text-decoration: none;
+  font-family: Public Sans;
+  font-size: 13px;
+}
+
+/*articles-health-nutrition styling starts*/
+/*highlighted nutrition article*/
+
+.highlighted-nutrition-article {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.highlighted-image-nutrition img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  display: block;
+}
+
+.highlighted-text-nutrition-background {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 130px 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to top, #0a287e 0%, transparent 100%);
+}
+
+.highlighted-text-nutrition {
+  position: absolute;
+  font-family: Bebas Neue;
+  font-size: 28px;
+  top: 50%;
+  left: 5%;
+  letter-spacing: 1px;
+  color: white;
+  max-width: 900px;
+}
+
+/*nutrition articles list*/
+
+.main-content {
+  display: flex;
+  gap: 40px;
+}
+
+.nutrition-articles-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.nutrition-article {
+  display: flex;
+  gap: 15px;
+  padding: 40px 65px;
+}
+
+.nutrition-article img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.nutrition-article-text h2 {
+  font-size: 28px;
+  color: #0a287e;
+  font-family: Bebas Neue;
+  text-align: left;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: -8px;
+}
+
+.nutrition-article-text p {
+  font-size: 15px;
+  font-family: Chivo;
+  color: #000;
+  width: 250px;
+}
+
+.nutrition-article-text a {
+  font-size: 15px;
+  font-family: Chivo;
+  font-weight: bold;
+  color: #1e68d3;
+}
+
+/*top comments section */
+
+.top-comments {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0px;
+  background-color: #f5fbff;
+}
+
+.top-comments-heading {
+  height: 60px;
+  transform: translateY(-20px);
+  background-color: #fbe9e4;
+}
+
+.top-comments-heading h1 {
+  font-family: Chivo;
+  font-size: 26px;
+  color: #0a287e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-comments-profiles {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.top-comments-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.top-comments-profile img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.comment {
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.comment h1 {
+  font-family: Chivo;
+  font-weight: bold;
+  font-size: 16px;
+  color: #0a287e;
+  margin: 0;
+}
+
+.comment p {
+  font-family: Chivo;
+  font-size: 14px;
+  color: #333;
+  margin-top: 8px;
+}
+
+/* author section */
+
+.become-author {
+  font-family: Chivo;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.become-author p {
+  margin-top: 0px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.become-author h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0a287e;
+  text-align: center;
+}
+
+.become-author form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0px;
+}
+
+.become-author input {
+  padding: 10px;
+  border: 0.5px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(47, 47, 47, 0.3);
+  border-radius: 50px;
+  width: 300px;
+}
+
+.become-author button {
+  width: 145px;
+  background-color: #1e68d3;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: Chivo;
+  font-weight: bold;
+}
+
+/*responsiveness for articles-health-nutrition */
+@media (max-width: 768px) {
+  .highlighted-nutrition-article {
+    height: 320px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .highlighted-text-nutrition {
+    font-size: 20px;
+    top: 55%;
+    max-width: 90%;
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .highlighted-text-nutrition-background {
+    top: 160px;
+    padding: 90px 0;
+  }
+
+  .highlighted-image-nutrition img {
+    object-position: center;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .nutrition-articles-section,
+  .top-comments {
+    width: 100%;
+  }
+
+  .top-comments-profiles {
+    width: 100%;
+  }
+
+  .nutrition-article {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .nutrition-article img {
+    width: 350px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .nutrition-article-text p {
+    width: 100%;
+  }
+}
+
+/*exrcises styling starts*/
+/* equipment options */
+
+.main-content-exercises {
+  display: flex;
+  gap: 40px;
+}
+
+.equipment-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.equipment-heading h1 {
+  font-family: Bebas Neue;
+  font-size: 36px;
+  color: #0a287e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.equipment-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 120px;
+  row-gap: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.category img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.category p {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0a287e;
+}
+
+.category a p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.view-more-equipment button {
+  width: 160px;
+  background-color: #1e68d3;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: Chivo;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.view-more-equipment img {
+  width: 50px;
+  height: 50px;
+}
+
+/* muscle group */
+
+.muscle-groups {
+  background-color: #fafaf9;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.muscle-groups-heading {
+  text-align: center;
+}
+
+.muscle-groups-heading h1 {
+  font-family: Bebas Neue;
+  font-size: 36px;
+  color: #0a287e;
+  margin-bottom: 10px;
+}
+
+.muscle-groups-heading h2 {
+  font-family: Public Sans;
+  font-size: 18px;
+  color: #0a287e;
+  margin: 0;
+}
+
+.muscle-groups-image img {
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* responsiveness for exercise page */
+@media (max-width: 956px) {
+  .main-content-exercises {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .equipment-section,
+  .muscle-groups {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .equipment-categories {
+    column-gap: 40px;
+    row-gap: 30px;
+  }
+
+  .category img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .view-more-equipment button {
+    margin-bottom: 40px;
+  }
+
+  .muscle-groups-image img {
+    max-width: 300px;
+  }
+
+  .equipment-heading h1,
+  .muscle-groups-heading h1 {
+    font-size: 28px;
+  }
+
+  .muscle-groups-heading h2 {
+    font-size: 16px;
+  }
+}
+
 /*----- log in styling -----*/
 
 main {
   display: flex;
-  justify-content: center;
+  margin-left: 0px;
   align-items: center;
   height: 600px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(0, 0, 0, 0.1);
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 250px;
 }
 
 a {
@@ -567,127 +1351,108 @@ a {
 }
 
 .box {
-  background-color: white;
-  border-radius: 20px;
-  padding: 40px;
-  width: 300px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+  padding: 80px;
+  width: 350px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .box h2 {
-  color: #0033cc;
-  font-size: 22px;
+  color: #1e68d3;
+  font-size: 40px;
   margin-bottom: 30px;
-}
+  font-stretch: ultra-condensed;
+  font-family: "Bebas Neue", Arial, sans-serif;
+} /*login text */
 
 .rectangle {
   display: block;
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+  border-radius: 50px;
+
   background-color: #f9f9f9;
-  color: black;
+  color: #666;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .button {
   display: block;
   background-color: #f4dede;
-  color: #0033cc;
+  color: #1e68d3;
   padding: 10px;
   width: 100%;
-  margin-top: 10px;
-  border-radius: 10px;
+  margin-top: 20px;
+  border-radius: 40px;
+  text-align: center;
+  font-family: "Chivo", Arial, sans-serif;
+  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
 }
 
 .or-text {
   margin: 20px 0;
   font-size: 14px;
   color: #666;
+  text-align: center;
+  font-family: "Chivo", Arial, sans-serif;
 }
 
 .icons-second {
-  font-size: 30px;
-  margin: 10px 10px 20px;
-}
-
-.login-link {
-  display: inline-block;
-  font-size: 14px;
-  color: gray;
-  margin-top: 10px;
-}
-
-/*----- create account page ------*/
-main {
+  margin: 20px auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 600px;
-  background-color: rgba(255, 255, 255, 0.5);
+  gap: 20px;
 }
 
-a {
+.icons-second img {
+  width: 40px;
+  height: 40px;
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.login {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+
+.login a {
+  margin: 0 5px;
   text-decoration: none;
 }
+.log-in a {
+  text-decoration: none;
+  color: #007bff;
+}
 
-.box {
-  background-color: white;
-  border-radius: 20px;
-  padding: 40px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h2 {
   text-align: center;
-}
-
-.box h2 {
-  color: #0033cc;
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-
-.rectangle {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
-  color: black;
-}
-
-.button {
-  display: block;
-  background-color: #f4dede;
-  color: #0033cc;
-  padding: 10px;
-  width: 100%;
-  margin-top: 10px;
-  border-radius: 10px;
-}
-
-.or-text {
-  margin: 20px 0;
-  font-size: 14px;
-  color: #666;
-}
-
-.icons-second {
-  font-size: 30px;
-  margin: 10px 10px 20px;
-}
-
-.login-link {
-  display: inline-block;
-  font-size: 14px;
-  color: gray;
-  margin-top: 10px;
+  font-family: "Chivo", Arial, sans-serif;
 }
 
 /*----- Workouts styling -----*/
+
+.workouts-header {
+  display: flex;
+  list-style: none;
+  padding-right: 2rem;
+  font-family: Bebas Neue;
+  font-size: 20px;
+  margin-top: -325px;
+  color: white;
+}
+.workouts-header a {
+  text-decoration: none;
+}
 
 .workoutH {
   font-family: Bebas Neue;
@@ -696,7 +1461,7 @@ a {
   font-size: 50px;
   margin-left: 30px;
   margin-bottom: 0px;
-  margin-top: -230px;
+  margin-top: 100px;
 }
 
 .workout-txt {
@@ -745,7 +1510,6 @@ a {
   margin-left: 100px;
   padding-left: 170px;
   padding-right: 431px;
-  padding-top: -200px;
 }
 
 .exercises-header {
@@ -832,47 +1596,198 @@ a {
   color: #fff;
 }
 
-@media screen and (max-width: 1100px) {
-  .workoutH {
-    margin-top: -160px;
-  }
-  .days {
-    padding-top: 400px;
-    translate: -80px -200px;
-  }
-  .days li {
-    padding-left: 10px;
-    font-size: 8pt;
-    margin-top: 1rem;
-  }
+/*----- Home styling -----*/
 
-  .workouts-background {
+.home-header h1 {
+  font-family: Bebas Neue;
+  font-weight: 100;
+  font-size: 48pt;
+  text-align: center;
+  color: white;
+  translate: 0px -400px;
+  margin: 0px 0px;
+}
+.home-header h2 {
+  font-family: Public Sans;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  translate: 0px -400px;
+  margin: 5px 5px;
+}
+
+.home-icons {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.home-icons img {
+  width: 10%;
+  height: auto;
+}
+
+.home-header1 {
+  color: #0a287e;
+  font-family: Chivo;
+  font-size: 18pt;
+}
+
+.home-icons p {
+  font-family: Public Sans;
+  font-size: 12pt;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.home-icons-flex {
+  display: flex;
+  translate: 0px -100px;
+}
+
+.home-read-more a {
+  background-color: #1e68d3;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.home-workouts {
+  background: #ddf2ff;
+  padding-left: 20px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.home-workouts h1 {
+  font-family: Bebas Neue;
+  font-weight: 100;
+  font-size: 48pt;
+  color: white;
+  max-width: 600px;
+}
+
+.home-workouts p {
+  color: #0a287e;
+  font-family: Chivo;
+  font-size: 12pt;
+  max-width: 500px;
+}
+
+.home-workouts img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.home-star {
+  padding: 0px;
+  translate: -120px 10px;
+}
+
+.home-muscle-groups {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.home-muscle-groups p {
+  margin-top: 10px;
+  max-width: 340px;
+  text-align: left;
+}
+
+.home-muscle-groups h1 {
+  font-family: Bebas Neue;
+  font-size: 48px;
+  font-weight: 100;
+  margin: 0px;
+  color: #0a287e;
+  max-width: 400px;
+  text-align: right;
+  position: absolute;
+  right: 30px;
+}
+
+.home-muscle-groups-img-flex {
+  display: flex;
+}
+.home-muscle-groups-img {
+  margin-top: 70px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.home-muscle-groups-img p {
+  font-family: Public Sans;
+  color: #0a287e;
+  font-size: 16pt;
+}
+
+.home-muscle-groups-img img {
+  width: 75%;
+}
+
+.home-header2 {
+  color: #0a287e;
+  font-family: Chivo;
+  font-size: 14pt;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-collage {
+  display: flex;
+  margin-top: 50px;
+}
+
+.home-collage1 {
+  display: block;
+}
+
+.home-header3 {
+  max-width: 400px;
+  text-align: right;
+  position: absolute;
+  right: 30px;
+}
+
+.home-header3 h1 {
+  font-size: 36pt;
+  font-weight: 100;
+  font-family: Bebas Neue;
+  color: #0a287e;
+}
+
+.home-header3 p {
+  font-weight: 10;
+  font-size: 18pt;
+  font-family: Bebas Neue;
+  color: #0a287e;
+}
+
+@media screen and (max-width: 900px) {
+  .home-icons-flex {
     flex-direction: column;
-    margin-top: -70px;
+    align-items: center;
   }
-  .exercises-workout {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: -100px;
-    margin-top: -400px;
-    margin-bottom: 500px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .home-img {
+    width: 100%;
   }
-  .info-spacing {
-    padding-left: 1rem;
+  .home-header {
+    translate: 0px 200px;
+    margin-bottom: 100px;
   }
-  .info h1 {
-    font-size: 8pt;
+  .home-header h1 {
+    font-size: 30pt;
   }
-  .info p {
-    font-size: 8pt;
-  }
-  .italic p {
-    font-size: 5pt;
-  }
-  .exercises-header p {
-    font-size: 24pt;
+  .home-header h2 {
+    font-size: 12pt;
   }
 }
