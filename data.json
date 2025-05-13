@@ -1,0 +1,162 @@
+{
+  "equipment": [
+    "Dumbbells",
+    "Cable Machine",
+    "Barbell",
+    "BodyWeight",
+    "Kettlebell"
+  ],
+  "muscleGroups": ["Chest", "Back", "Legs", "Arms", "Shoulders", "Core"],
+  "workouts": [
+    {
+      "equipment": "Dumbbells",
+      "muscleGroup": "chest",
+      "name": "Mechine Pec Fly"
+    },
+    {
+      "equipment": "Dumbbells",
+      "muscleGroup": "Back",
+      "name": "Dumbell Row"
+    },
+    {
+      "equipment": "Dumbbells",
+      "muscleGroup": "Legs",
+      "name": "Dumbell Goblet"
+    },
+    {
+      "equipment": "Dumbbells",
+      "muscleGroup": "Arms",
+      "name": "Dumbell Curl"
+    },
+    {
+      "equipment": "Dumbbells",
+      "muscleGroup": "Shoulders",
+      "name": "Dumbell Press"
+    },
+    {
+      "equipment": "Dumbbells",
+      "muscleGroup": "Core",
+      "name": "Dumbell Russian Twist"
+    },
+    {
+      "equipment": "Cable Machine",
+      "muscleGroup": "chest",
+      "name": "Mechine Pec Fly"
+    },
+    {
+      "equipment": "Cable Machine",
+      "muscleGroup": "Back",
+      "name": "Cable Bent Over"
+    },
+    {
+      "equipment": "Cable Machine",
+      "muscleGroup": "Legs",
+      "name": "Cable Squad"
+    },
+    {
+      "equipment": "Cable Machine",
+      "muscleGroup": "Arms",
+      "name": "Cable Baysian Curl"
+    },
+    {
+      "equipment": "Cable Machine",
+      "muscleGroup": "Shoulders",
+      "name": "Cable Lateral Raise "
+    },
+    {
+      "equipment": "Cable Machine",
+      "muscleGroup": "Core",
+      "name": "Cable Row "
+    },
+    {
+      "equipment": "Barbell",
+      "muscleGroup": "chest",
+      "name": "Mechine Pec Fly"
+    },
+    {
+      "equipment": "Barbell",
+      "muscleGroup": "Back",
+      "name": "Barbell Bent Over "
+    },
+    {
+      "equipment": "Barbell",
+      "muscleGroup": "Legs",
+      "name": "Barbell Squad"
+    },
+    {
+      "equipment": "Barbell",
+      "muscleGroup": "Arms",
+      "name": "Barbell curl"
+    },
+    {
+      "equipment": "Barbell",
+      "muscleGroup": "Shoulders",
+      "name": "Barbell Overhead Press "
+    },
+    {
+      "equipment": "Barbell",
+      "muscleGroup": "Core",
+      "name": "Barbell Roll"
+    },
+    {
+      "equipment": "BodyWeight",
+      "muscleGroup": "chest",
+      "name": "Mechine Pec Fly"
+    },
+    {
+      "equipment": "BodyWeight",
+      "muscleGroup": "Back",
+      "name": "PullUps"
+    },
+    {
+      "equipment": "BodyWeight",
+      "muscleGroup": "Legs",
+      "name": "Squad"
+    },
+    {
+      "equipment": "BodyWeight",
+      "muscleGroup": "Arms",
+      "name": "Chin Ups"
+    },
+    {
+      "equipment": "BodyWeight",
+      "muscleGroup": "Shoulders",
+      "name": "Pike Press"
+    },
+    {
+      "equipment": "BodyWeight",
+      "muscleGroup": "Core",
+      "name": "Crunches"
+    },
+    {
+      "equipment": "Kettlebell",
+      "muscleGroup": "chest",
+      "name": "Mechine Pec Fly"
+    },
+    {
+      "equipment": "Kettlebell",
+      "muscleGroup": "Back",
+      "name": "Ketllebell Row"
+    },
+    {
+      "equipment": "Kettlebell",
+      "muscleGroup": "Legs",
+      "name": "Kettlebell squad"
+    },
+    {
+      "equipment": "Kettlebell",
+      "muscleGroup": "Arms",
+      "name": "Goblet Curl"
+    },
+    {
+      "equipment": "Kettlebell",
+      "muscleGroup": "Shoulders",
+      "name": "Kattlebell Row"
+    },
+    {
+      "equipment": "Kettlebell",
+      "muscleGroup": "Core",
+      "name": "Kattlebell Windmil"
+    }
+  ]
+}

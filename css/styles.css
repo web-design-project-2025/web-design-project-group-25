@@ -1122,6 +1122,9 @@ main {
   margin-bottom: 250px;
 }
 
+a {
+  text-decoration: none;
+}
 .login-background {
   background-image: url("../images/login.jpg");
   background-size: cover;
@@ -1129,11 +1132,6 @@ main {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-a {
-  text-decoration: none;
-}
-
 .box {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 40px;
@@ -1288,3 +1286,54 @@ h2 {
   text-align: left;
 }
 /**/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+.page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.equipment-list,
+.muscle-group-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="radio"] {
+  margin-right: 5px;
+}
+.checkbox {
+  margin-right: 8px;
+}
+.body-diagram {
+  text-align: center;
+  margin: 20px 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.selection {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
