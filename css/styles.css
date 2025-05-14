@@ -421,7 +421,7 @@ body {
 /*----- recommended article section -----*/
 .recommended-article {
   position: relative;
-  height: 50vh;
+
   overflow: hidden;
 }
 
@@ -1555,7 +1555,9 @@ h2 {
   font-size: 28px;
   color: #444;
 }
+
 .SS-description {
+  font-family: Chivo;
   max-width: 950px;
   margin: 0 auto;
   text-align: center;
@@ -2007,12 +2009,9 @@ img {
 }
 
 .home-collage {
+  width: 600px;
   display: flex;
   margin-top: 50px;
-}
-
-.home-collage1 {
-  display: block;
 }
 
 .home-header3 {
@@ -2030,9 +2029,9 @@ img {
 }
 
 .home-header3 p {
-  font-weight: 10;
-  font-size: 18pt;
-  font-family: Bebas Neue;
+  font-size: 25pt;
+  font-family: Barlow Condensed;
+  font-weight: 100;
   color: #0a287e;
 }
 
