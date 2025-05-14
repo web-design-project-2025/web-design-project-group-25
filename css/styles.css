@@ -1981,4 +1981,26 @@ img {
   .home-header h2 {
     font-size: 12pt;
   }
+  .home-muscle-groups h1 {
+    position: static;
+    text-align: start;
+    font-size: 18pt;
+    max-width: 200px;
+  }
+  .home-muscle-groups {
+    flex-direction: column;
+  }
+  .home-muscle-groups-img-flex {
+    flex-direction: column;
+  }
+  .home-header3 {
+    position: static;
+    text-align: start;
+    max-width: 300px;
+    margin-left: 20px;
+  }
+
+  .home-collage {
+    flex-direction: column;
+  }
 }
