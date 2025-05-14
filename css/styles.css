@@ -1798,6 +1798,7 @@ img {
   translate: 0px -400px;
   margin: 0px 0px;
 }
+
 .home-header h2 {
   font-family: Public Sans;
   font-weight: 100;
@@ -1815,6 +1816,13 @@ img {
 .home-icons img {
   width: 10%;
   height: auto;
+}
+
+.home-subheader1 {
+  color: #0a287e;
+  font-family: Chivo;
+  font-size: 18pt;
+  text-align: left;
 }
 
 .home-header1 {
@@ -1844,6 +1852,12 @@ img {
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.home-read-more a:hover {
+  background-color: #0a287e;
+  transform: scale(1.05);
 }
 
 .home-workouts {
@@ -1889,6 +1903,7 @@ img {
   margin-top: 10px;
   max-width: 340px;
   text-align: left;
+  font-family: Chivo;
 }
 
 .home-muscle-groups h1 {
@@ -1906,12 +1921,15 @@ img {
 .home-muscle-groups-img-flex {
   display: flex;
 }
+
 .home-muscle-groups-img {
   margin-top: 70px;
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
+  transition: transform 0.3s ease;
 }
+
 .home-muscle-groups-img p {
   font-family: Public Sans;
   color: #0a287e;
@@ -1922,12 +1940,29 @@ img {
   width: 75%;
 }
 
-.home-header2 {
+.home-muscle-groups-img:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.home-header2 a {
   color: #0a287e;
   font-family: Chivo;
+  font-weight: bold;
   font-size: 14pt;
   text-align: center;
   margin-top: 50px;
+  text-decoration: none;
+}
+
+.home-header2 {
+  color: #0a287e;
+  font-family: Chivo;
+  font-weight: bold;
+  font-size: 14pt;
+  text-align: center;
+  margin-top: 50px;
+  text-decoration: none;
 }
 
 .home-collage {
