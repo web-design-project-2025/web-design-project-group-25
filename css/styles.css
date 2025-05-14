@@ -17,6 +17,10 @@ body {
   margin: none;
 }
 
+.nav2 {
+  display: flex;
+}
+
 .nav {
   display: flex;
   gap: 20px;
@@ -27,6 +31,7 @@ body {
   color: #dce8ff;
   text-decoration: none;
   font-size: 16px;
+  padding-left: 20px;
 }
 
 .under-header {
@@ -64,8 +69,39 @@ body {
   margin-top: 50px;
 }
 
+.active {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 900px) {
+  .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .nav2 {
+    flex-direction: column;
+    font-size: 8pt;
+  }
   .nav {
+    display: flex;
+    translate: -20px 0px;
+  }
+
+  .nav a {
+    font-size: 8pt;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .icons {
+    padding: 5px 5px;
+  }
+
+  .icons img {
+    width: 18px;
+    height: 18px;
   }
 }
 
