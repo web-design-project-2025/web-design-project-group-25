@@ -51,6 +51,7 @@ if (loginForm) {
     }
 
     alert("Login successful!");
-    window.location.href = "index.html"; // Change to  home.html
+
+    window.location.href = "index.html";
   });
 }

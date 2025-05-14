@@ -17,16 +17,21 @@ body {
   margin: none;
 }
 
+.nav2 {
+  display: flex;
+}
+
 .nav {
   display: flex;
   gap: 20px;
 }
 
 .nav a {
-  font-family: Arial;
+  font-family: Barlow Condensed;
   color: #dce8ff;
   text-decoration: none;
   font-size: 16px;
+  padding-left: 20px;
 }
 
 .under-header {
@@ -62,6 +67,42 @@ body {
 
 .text {
   margin-top: 50px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .nav2 {
+    flex-direction: column;
+    font-size: 8pt;
+  }
+  .nav {
+    display: flex;
+    translate: -20px 0px;
+  }
+
+  .nav a {
+    font-size: 8pt;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .icons {
+    padding: 5px 5px;
+  }
+
+  .icons img {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 /*footer starts*/
@@ -380,7 +421,7 @@ body {
 /*----- recommended article section -----*/
 .recommended-article {
   position: relative;
-  height: 50vh;
+
   overflow: hidden;
 }
 
@@ -1514,7 +1555,9 @@ h2 {
   font-size: 28px;
   color: #444;
 }
+
 .SS-description {
+  font-family: Chivo;
   max-width: 950px;
   margin: 0 auto;
   text-align: center;
@@ -1798,6 +1841,7 @@ img {
   translate: 0px -400px;
   margin: 0px 0px;
 }
+
 .home-header h2 {
   font-family: Public Sans;
   font-weight: 100;
@@ -1815,6 +1859,13 @@ img {
 .home-icons img {
   width: 10%;
   height: auto;
+}
+
+.home-subheader1 {
+  color: #0a287e;
+  font-family: Chivo;
+  font-size: 18pt;
+  text-align: left;
 }
 
 .home-header1 {
@@ -1844,6 +1895,12 @@ img {
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.home-read-more a:hover {
+  background-color: #0a287e;
+  transform: scale(1.05);
 }
 
 .home-workouts {
@@ -1889,6 +1946,7 @@ img {
   margin-top: 10px;
   max-width: 340px;
   text-align: left;
+  font-family: Chivo;
 }
 
 .home-muscle-groups h1 {
@@ -1906,12 +1964,15 @@ img {
 .home-muscle-groups-img-flex {
   display: flex;
 }
+
 .home-muscle-groups-img {
   margin-top: 70px;
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
+  transition: transform 0.3s ease;
 }
+
 .home-muscle-groups-img p {
   font-family: Public Sans;
   color: #0a287e;
@@ -1922,21 +1983,35 @@ img {
   width: 75%;
 }
 
-.home-header2 {
+.home-muscle-groups-img:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.home-header2 a {
   color: #0a287e;
   font-family: Chivo;
+  font-weight: bold;
   font-size: 14pt;
   text-align: center;
   margin-top: 50px;
+  text-decoration: none;
+}
+
+.home-header2 {
+  color: #0a287e;
+  font-family: Chivo;
+  font-weight: bold;
+  font-size: 14pt;
+  text-align: center;
+  margin-top: 50px;
+  text-decoration: none;
 }
 
 .home-collage {
+  width: 600px;
   display: flex;
   margin-top: 50px;
-}
-
-.home-collage1 {
-  display: block;
 }
 
 .home-header3 {
@@ -1954,9 +2029,9 @@ img {
 }
 
 .home-header3 p {
-  font-weight: 10;
-  font-size: 18pt;
-  font-family: Bebas Neue;
+  font-size: 25pt;
+  font-family: Barlow Condensed;
+  font-weight: 100;
   color: #0a287e;
 }
 
@@ -1965,14 +2040,11 @@ img {
     flex-direction: column;
     align-items: center;
   }
-}
-
-@media screen and (max-width: 600px) {
   .home-img {
     width: 100%;
   }
   .home-header {
-    translate: 0px 200px;
+    translate: 0px 230px;
     margin-bottom: 100px;
   }
   .home-header h1 {
@@ -1981,4 +2053,252 @@ img {
   .home-header h2 {
     font-size: 12pt;
   }
+  .home-muscle-groups h1 {
+    position: static;
+    text-align: start;
+    font-size: 18pt;
+    max-width: 200px;
+  }
+  .home-muscle-groups {
+    flex-direction: column;
+  }
+  .home-muscle-groups-img-flex {
+    flex-direction: column;
+  }
+  .home-header3 {
+    position: static;
+    text-align: start;
+    max-width: 300px;
+    margin-left: 20px;
+  }
+
+  .home-collage {
+    flex-direction: column;
+  }
+}
+
+/*editorial page styling starts*/
+/*heading for the article*/
+
+.heading-eating-clean {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.heading-image-eating-clean img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  display: block;
+}
+
+.heading-text-eating-clean-background {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 130px 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to top, #0a287e 0%, transparent 100%);
+}
+
+.heading-text-eating-clean {
+  position: absolute;
+  font-family: Bebas Neue;
+  font-size: 28px;
+  top: 50%;
+  left: 5%;
+  letter-spacing: 1px;
+  color: white;
+  max-width: 900px;
+}
+
+/*content article*/
+
+.main-content {
+  display: flex;
+  gap: 40px;
+}
+
+.editorial-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.editorial {
+  display: flex;
+  gap: 15px;
+  padding: 5px 50px;
+}
+
+.editorial img {
+  width: 635px;
+  height: 240px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.editorial-text h2 {
+  font-size: 50px;
+  color: #0a287e;
+  font-family: Bebas Neue;
+  line-height: 1;
+  text-align: left;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.editorial-text p {
+  font-size: 16px;
+  font-family: Chivo;
+  color: #000;
+  width: 630px;
+}
+
+.editorial-text-content h2 {
+  font-size: 26px;
+  color: #0a287e;
+  font-family: Barlow Condensed;
+  text-align: left;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.editorial-text-content p {
+  font-size: 14px;
+  font-family: Chivo;
+  color: #000;
+  width: 630px;
+}
+
+.breadcrumb p {
+  font-size: 15px;
+  font-family: Public Sans;
+  color: #000;
+  width: 630px;
+}
+
+/*top comments section */
+
+.comments {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0px;
+  background-color: #f5fbff;
+}
+
+.comments-heading {
+  height: 60px;
+  transform: translateY(-20px);
+  background-color: #fbe9e4;
+}
+
+.comments-heading h1 {
+  font-family: Chivo;
+  font-size: 26px;
+  color: #0a287e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.comments-profiles {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.comments-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.comments-profile img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.comment {
+  padding: 13px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.comment h1 {
+  font-family: Chivo;
+  font-weight: bold;
+  font-size: 16px;
+  color: #0a287e;
+  margin: 0;
+}
+
+.comment p {
+  font-family: Chivo;
+  font-size: 13px;
+  color: #333;
+}
+
+/* leave a comment */
+
+.leave-comment {
+  font-family: Chivo;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.leave-comment p {
+  margin-top: 0px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.leave-comment h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0a287e;
+  text-align: center;
+}
+
+.leave-comment form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0px;
+}
+
+.leave-comment input {
+  padding: 10px;
+  border: 0.5px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(47, 47, 47, 0.3);
+  border-radius: 50px;
+  width: 300px;
+}
+
+.leave-comment button {
+  width: 110px;
+  background-color: #1e68d3;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: Chivo;
+  font-weight: bold;
 }
