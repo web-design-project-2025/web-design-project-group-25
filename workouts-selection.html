@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about-us</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Workout Selection</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,12 +23,6 @@
       href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100;1,100&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header class="navbar">
@@ -43,8 +36,8 @@
           <a href="workouts.html">Workouts</a>
         </div>
         <div class="nav2">
-          <a href="exercises.html">Exercises</a>
-          <a href="about-us.html" class="active">About Us</a>
+          <a href="exercises.html" class="active">Exercises</a>
+          <a href="about-us.html">About Us</a>
           <a href="log-in.html">Log In</a>
         </div>
       </nav>
@@ -56,57 +49,22 @@
       </div>
     </header>
 
-    <div class="about-page">
-      <div class="user-card">
-        <img
-          src="images/ChatGPT Image May 5, 2025, 01_38_59 PM.png"
-          alt="Arina Gheorgiu"
-        />
-        <p class="user-name">Arina Gheorghiu</p>
-        <p class="user-title">CEO</p>
-      </div>
-      <div class="user-card">
-        <img src="images/May 5, 2025, 01_27_02 PM.png" alt="Alfred Olsson" />
-        <p class="user-name">Alfred Olsson</p>
-        <p class="user-title">COO</p>
-      </div>
-      <div class="user-card">
-        <img
-          src="images/ChatGPT Image May 5, 2025, 01_35_21 PM.png"
-          alt="Canberk Oztonguc"
-        />
-        <p class="user-name">Canberk Oztonguc</p>
-        <p class="user-title">CFO</p>
-      </div>
-    </div>
-    <div class="SS-description">
-      <p>
-        <strong>Shape Shifter</strong> is a simple, useful fitness website that
-        helps people train smarter. It has clear exercise guides, personalized
-        workout plans, and tools to track progress. Built to be actually
-        helpful, not just another generic fitness site.
-      </p>
-    </div>
-    <div class="about-page-bottom">
-      <div>
-        <a>info@shapeshifter.com</a>
-        <div class="about-page-icons">
-          <img src="images/facebook.png" />
-          <img src="images/twitter.png" />
-          <img src="images/instagram.png" />
-        </div>
-      </div>
-      <div class="about-page-bottom-right">
-        <p><strong>Shape Shifter HQ</strong></p>
-        <p>Rosenlundsgatan 42B</p>
-        <p>553 12 Jönköping</p>
-        <p>Sweden</p>
-      </div>
+    <div class="page">
+      <h1>Workout Selection</h1>
+      <div class="section-ttl">Select Equipment</div>
+      <div class="equipment-list" id="equipment-list"></div>
+
+      <div class="section-title">Select Muscle Group</div>
+      <div class="muscle-group-list" id="muscle-group-list"></div>
+
+      <div class="selection" id="selection-display">-----</div>
     </div>
 
+    <script src="data.json" type="application/json"></script>
+    <script src="script.js"></script>
     <footer class="footer">
       <div class="footer-left">
-        <a href="index.html" class="logo-footer">
+        <a href="home.html" class="logo-footer">
           <img src="images/logo.png" />
         </a>
         <p class="mission">
@@ -133,7 +91,7 @@
         </div>
         <div class="about">
           <h4>ABOUT</h4>
-          <a href="index.html">Home</a>
+          <a href="home.html">Home</a>
           <a href="articles.html">Articles</a>
           <a href="workouts.html">Workouts</a>
           <a href="exercises.html">Exercises</a>

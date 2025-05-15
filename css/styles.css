@@ -1,4 +1,4 @@
-/*header starts*/
+/* Header styling starts*/
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -17,16 +17,19 @@ body {
   margin: none;
 }
 
+.nav2 {
+  display: flex;
+}
 .nav {
   display: flex;
-  gap: 20px;
 }
 
 .nav a {
-  font-family: Arial;
+  font-family: Barlow Condensed;
   color: #dce8ff;
   text-decoration: none;
   font-size: 16px;
+  padding-left: 20px;
 }
 
 .under-header {
@@ -64,7 +67,44 @@ body {
   margin-top: 50px;
 }
 
-/*footer starts*/
+.active {
+  font-weight: bold;
+}
+
+/* Hedear Responsiveness */
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .nav2 {
+    flex-direction: column;
+    font-size: 8pt;
+  }
+  .nav {
+    display: flex;
+    translate: -20px 0px;
+  }
+
+  .nav a {
+    font-size: 8pt;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .icons {
+    padding: 5px 5px;
+  }
+
+  .icons img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Footer styling starts*/
 .footer {
   background-color: #4267cc;
   color: white;
@@ -136,7 +176,7 @@ body {
   text-decoration: underline;
 }
 
-/*articles-workouts styling starts*/
+/*Articles-workouts styling starts*/
 /*----- under header menu -----*/
 
 .under-header {
@@ -376,11 +416,11 @@ body {
   margin-right: 30px;
 }
 
-/*articles-main styling starts*/
+/*Articles-main styling starts*/
 /*----- recommended article section -----*/
 .recommended-article {
   position: relative;
-  height: 50vh;
+
   overflow: hidden;
 }
 
@@ -611,7 +651,7 @@ body {
   font-size: 14px;
 }
 
-/* popular article section */
+/* ----- popular article section -----*/
 
 .popular-section {
   padding: 40px 0px;
@@ -713,7 +753,7 @@ body {
   gap: 10px;
 }
 
-/*responsiveness for this section*/
+/*responsiveness for popular article section*/
 @media screen and (max-width: 768px) {
   .popular-content {
     flex-direction: column;
@@ -779,7 +819,7 @@ body {
   }
 }
 
-/*articles-health styling starts*/
+/*Articles-health styling starts*/
 /*----- health section -----*/
 
 .health {
@@ -818,6 +858,41 @@ body {
   width: 100%;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+
+/*responsiveness for the top part of the page*/
+@media (max-width: 768px) {
+  .health-text {
+    position: static;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  .health-text h1 {
+    font-size: 48px;
+  }
+
+  .health-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .health-text h1 {
+    font-size: 29px;
+  }
+
+  .health-text p {
+    font-size: 10px;
+  }
+
+  .health-image img {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
 }
 
 /*----- recent articles health section -----*/
@@ -913,7 +988,7 @@ body {
   font-size: 13px;
 }
 
-/*articles-health-nutrition styling starts*/
+/*Articles-health-nutrition styling starts*/
 /*highlighted nutrition article*/
 
 .highlighted-nutrition-article {
@@ -1006,7 +1081,7 @@ body {
   color: #1e68d3;
 }
 
-/*top comments section */
+/*-----top comments section----- */
 
 .top-comments {
   width: 40%;
@@ -1071,7 +1146,7 @@ body {
   margin-top: 8px;
 }
 
-/* author section */
+/* ----- author section ------*/
 
 .become-author {
   font-family: Chivo;
@@ -1123,7 +1198,7 @@ body {
 }
 
 /*responsiveness for articles-health-nutrition */
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .highlighted-nutrition-article {
     height: 320px;
     border-bottom-left-radius: 30px;
@@ -1176,8 +1251,8 @@ body {
   }
 }
 
-/*exrcises styling starts*/
-/* equipment options */
+/*Exrcises styling starts*/
+/* ----- equipment options ----- */
 
 .main-content-exercises {
   display: flex;
@@ -1255,7 +1330,7 @@ body {
   height: 50px;
 }
 
-/* muscle group */
+/* ----- muscle group ----- */
 
 .muscle-groups {
   background-color: #fafaf9;
@@ -1332,7 +1407,7 @@ body {
   }
 }
 
-/*----- log in styling -----*/
+/*----- Log in styling -----*/
 
 main {
   display: flex;
@@ -1349,6 +1424,7 @@ main {
 a {
   text-decoration: none;
 }
+
 .login-background {
   background-image: url("../images/login.jpg");
   background-size: cover;
@@ -1356,12 +1432,14 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .box {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 40px;
   padding: 80px;
   width: 350px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 
 .box h2 {
@@ -1369,7 +1447,7 @@ a {
   font-size: 40px;
   margin-bottom: 30px;
   font-stretch: ultra-condensed;
-  font-family: "Bebas Neue", Arial, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 } /*login text */
 
 .rectangle {
@@ -1382,6 +1460,9 @@ a {
   background-color: #f9f9f9;
   color: #666;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+  border: none;
+  outline: none;
 }
 
 .button {
@@ -1389,13 +1470,16 @@ a {
   background-color: #f4dede;
   color: #1e68d3;
   padding: 10px;
-  width: 100%;
+  width: 107%;
   margin-top: 20px;
   border-radius: 40px;
   text-align: center;
   font-family: "Chivo";
   box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
   font-weight: bold;
+
+  border: none;
+  outline: none;
 }
 
 .or-text {
@@ -1446,7 +1530,7 @@ h2 {
   font-family: "Chivo";
 }
 
-/*about us page*/
+/*About us page styling*/
 .about-page {
   display: flex;
   justify-content: center;
@@ -1479,7 +1563,9 @@ h2 {
   font-size: 28px;
   color: #444;
 }
+
 .SS-description {
+  font-family: Chivo;
   max-width: 950px;
   margin: 0 auto;
   text-align: center;
@@ -1488,7 +1574,8 @@ h2 {
 .SS-description p {
   font-size: 22px;
 }
-.about-page-buttom {
+
+.about-page-bottom {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1496,24 +1583,25 @@ h2 {
   margin: 150px auto 50px auto;
   gap: 40px;
 }
-.about-page-buttom a {
+
+.about-page-bottom a {
   font-family: "Chivo", Arial, sans-serif;
   font-size: 20px;
 }
+
 .about-page-icons img {
   width: 50px;
   margin-top: 10px;
 }
-.about-page-buttom-right p {
+
+.about-page-bottom-right p {
   margin-left: 0;
   font-family: "Chivo", Arial, sans-serif;
   text-align: left;
 }
-/**/
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
-}
+
+/* Workouts-selection slyling starts */
+
 .page {
   max-width: 800px;
   margin: 20px auto;
@@ -1522,16 +1610,20 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.section-title {
+
+/* ttl - title */
+.section-ttl {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
+
 .equipment-list,
 .muscle-group-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
+
 label {
   display: flex;
   align-items: center;
@@ -1541,20 +1633,25 @@ label {
   border-radius: 5px;
   cursor: pointer;
 }
+
 input[type="radio"] {
   margin-right: 5px;
 }
+
 .checkbox {
   margin-right: 8px;
 }
+
 .body-diagram {
   text-align: center;
   margin: 20px 0;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .selection {
   margin-top: 20px;
   padding: 10px;
@@ -1563,16 +1660,7 @@ img {
 }
 
 /*----- Workouts styling -----*/
-
-.workouts-header {
-  display: flex;
-  list-style: none;
-  padding-right: 2rem;
-  font-family: Bebas Neue;
-  font-size: 20px;
-  margin-top: -325px;
-  color: white;
-}
+/* upper banner */
 
 .workoutH {
   font-family: Bebas Neue;
@@ -1581,7 +1669,7 @@ img {
   font-size: 50px;
   margin-left: 30px;
   margin-bottom: 0px;
-  translate: 0px -250px;
+  translate: 0px -230px;
 }
 
 .workout-txt {
@@ -1591,7 +1679,7 @@ img {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 30px;
-  translate: 0px -250px;
+  translate: 0px -230px;
 }
 
 .workout-txt-margin {
@@ -1611,6 +1699,7 @@ img {
   margin-bottom: 0px;
 }
 
+/* week days list */
 .days {
   margin-top: 50px;
   padding-left: 0px;
@@ -1629,6 +1718,7 @@ img {
   text-decoration: none;
 }
 
+/* left part with the workouts generator */
 .exercises-workout {
   background: #0a287e;
   margin-left: 100px;
@@ -1720,8 +1810,52 @@ img {
   color: #fff;
 }
 
-/*----- Home styling -----*/
+/* Responsiveness for workouts page */
 
+@media screen and (max-width: 900px) {
+  .workouts-background {
+    flex-direction: column;
+    padding-bottom: 200px;
+  }
+  .days {
+    margin-top: -40px;
+    text-align: start;
+    margin-left: -100px;
+  }
+  .days li {
+    font-size: 10pt;
+    margin-top: 1rem;
+  }
+  .exercises-workout {
+    margin-left: 0px;
+    font-size: 11pt;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .exercises-header p {
+    font-size: 28pt;
+  }
+
+  .italic p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .info h1 {
+    font-size: 12pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .info p {
+    font-size: 12pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/*----- Home styling -----*/
+/* banner in the top part of the page */
 .home-header h1 {
   font-family: Bebas Neue;
   font-weight: 100;
@@ -1731,6 +1865,7 @@ img {
   translate: 0px -400px;
   margin: 0px 0px;
 }
+
 .home-header h2 {
   font-family: Public Sans;
   font-weight: 100;
@@ -1740,6 +1875,7 @@ img {
   margin: 5px 5px;
 }
 
+/*second part with two recommended features */
 .home-icons {
   text-align: center;
   margin-bottom: 70px;
@@ -1748,6 +1884,13 @@ img {
 .home-icons img {
   width: 10%;
   height: auto;
+}
+
+.home-subheader1 {
+  color: #0a287e;
+  font-family: Chivo;
+  font-size: 18pt;
+  text-align: left;
 }
 
 .home-header1 {
@@ -1777,8 +1920,15 @@ img {
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 15px;
+  transition: all 0.3s ease;
 }
 
+.home-read-more a:hover {
+  background-color: #0a287e;
+  transform: scale(1.05);
+}
+
+/* calendar with workouts presentation */
 .home-workouts {
   background: #ddf2ff;
   padding-left: 20px;
@@ -1812,6 +1962,8 @@ img {
   translate: -120px 10px;
 }
 
+/* exercises based on muscle groups presentation */
+
 .home-muscle-groups {
   display: flex;
   margin-top: 50px;
@@ -1822,6 +1974,7 @@ img {
   margin-top: 10px;
   max-width: 340px;
   text-align: left;
+  font-family: Chivo;
 }
 
 .home-muscle-groups h1 {
@@ -1839,12 +1992,15 @@ img {
 .home-muscle-groups-img-flex {
   display: flex;
 }
+
 .home-muscle-groups-img {
   margin-top: 70px;
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
+  transition: transform 0.3s ease;
 }
+
 .home-muscle-groups-img p {
   font-family: Public Sans;
   color: #0a287e;
@@ -1855,21 +2011,30 @@ img {
   width: 75%;
 }
 
-.home-header2 {
+.home-muscle-groups-img:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.home-header2 a {
   color: #0a287e;
   font-family: Chivo;
+  font-weight: bold;
   font-size: 14pt;
   text-align: center;
   margin-top: 50px;
+  text-decoration: none;
 }
 
-.home-collage {
-  display: flex;
+.home-header2 {
+  color: #0a287e;
+  font-family: Chivo;
+  font-weight: bold;
+  font-size: 14pt;
+  text-align: center;
   margin-top: 50px;
-}
-
-.home-collage1 {
-  display: block;
+  margin-bottom: 100px;
+  text-decoration: none;
 }
 
 .home-header3 {
@@ -1877,6 +2042,7 @@ img {
   text-align: right;
   position: absolute;
   right: 30px;
+  translate: 0px -670px;
 }
 
 .home-header3 h1 {
@@ -1887,31 +2053,362 @@ img {
 }
 
 .home-header3 p {
-  font-weight: 10;
-  font-size: 18pt;
-  font-family: Bebas Neue;
+  font-size: 25pt;
+  font-family: Barlow Condensed;
+  font-weight: 100;
   color: #0a287e;
 }
 
+/* responsiveness for home page */
 @media screen and (max-width: 900px) {
   .home-icons-flex {
     flex-direction: column;
     align-items: center;
   }
-}
-
-@media screen and (max-width: 600px) {
   .home-img {
     width: 100%;
   }
   .home-header {
-    translate: 0px 200px;
+    translate: 0px 250px;
     margin-bottom: 100px;
   }
   .home-header h1 {
-    font-size: 30pt;
+    font-size: 20pt;
   }
   .home-header h2 {
     font-size: 12pt;
+  }
+
+  .home-workouts {
+    flex-direction: column;
+  }
+  .home-workouts p {
+    margin-right: 30px;
+  }
+  .home-star {
+    translate: 210px -370px;
+  }
+  .home-vector {
+    translate: -25px -75px;
+  }
+  .home-muscle-groups h1 {
+    position: static;
+    text-align: start;
+    font-size: 40pt;
+  }
+  .home-muscle-groups {
+    flex-direction: column;
+  }
+  .home-muscle-groups-img-flex {
+    flex-direction: column;
+  }
+  .home-header3 {
+    translate: 0px 0px;
+    margin-bottom: 50px;
+  }
+  .home-header3 {
+    position: static;
+    text-align: start;
+    max-width: 300px;
+    margin-left: 20px;
+  }
+}
+
+/*Editorial page styling starts*/
+/*heading for the article*/
+
+.heading-eating-clean {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.heading-image-eating-clean img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  display: block;
+}
+
+.heading-text-eating-clean-background {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 130px 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to top, #0a287e 0%, transparent 100%);
+}
+
+.heading-text-eating-clean {
+  position: absolute;
+  font-family: Bebas Neue;
+  font-size: 28px;
+  top: 50%;
+  left: 5%;
+  letter-spacing: 1px;
+  color: white;
+  max-width: 900px;
+}
+
+/*content of the article*/
+
+.main-content {
+  display: flex;
+  gap: 40px;
+}
+
+.editorial-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.editorial {
+  display: flex;
+  gap: 15px;
+  padding: 5px 50px;
+}
+
+.editorial img {
+  width: 635px;
+  height: 240px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.editorial-text h2 {
+  font-size: 50px;
+  color: #0a287e;
+  font-family: Bebas Neue;
+  line-height: 1;
+  text-align: left;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.editorial-text p {
+  font-size: 16px;
+  font-family: Chivo;
+  color: #000;
+  width: 630px;
+}
+
+.editorial-text-content h2 {
+  font-size: 26px;
+  color: #0a287e;
+  font-family: Barlow Condensed;
+  text-align: left;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.editorial-text-content p {
+  font-size: 14px;
+  font-family: Chivo;
+  color: #000;
+  width: 630px;
+}
+
+.breadcrumb p {
+  font-size: 15px;
+  font-family: Public Sans;
+  color: #000;
+  width: 630px;
+}
+
+/*top comments section */
+
+.comments {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0px;
+  background-color: #f5fbff;
+}
+
+.comments-heading {
+  height: 60px;
+  transform: translateY(-20px);
+  background-color: #fbe9e4;
+}
+
+.comments-heading h1 {
+  font-family: Chivo;
+  font-size: 26px;
+  color: #0a287e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.comments-profiles {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.comments-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.comments-profile img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.comment {
+  padding: 13px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.comment h1 {
+  font-family: Chivo;
+  font-weight: bold;
+  font-size: 16px;
+  color: #0a287e;
+  margin: 0;
+}
+
+.comment p {
+  font-family: Chivo;
+  font-size: 13px;
+  color: #333;
+}
+
+/* leave a comment */
+
+.leave-comment {
+  font-family: Chivo;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.leave-comment p {
+  margin-top: 0px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.leave-comment h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0a287e;
+  text-align: center;
+}
+
+.leave-comment form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0px;
+}
+
+.leave-comment input {
+  padding: 10px;
+  border: 0.5px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(47, 47, 47, 0.3);
+  border-radius: 50px;
+  width: 300px;
+}
+
+.leave-comment button {
+  width: 110px;
+  background-color: #1e68d3;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: Chivo;
+  font-weight: bold;
+}
+
+/* responsiveness for editorial page*/
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .editorial-section {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .editorial {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .editorial img,
+  .editorial-text p,
+  .editorial-text-content p,
+  .editorial-text-content h2,
+  .breadcrumb p {
+    width: 100%;
+  }
+
+  .comments {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .heading-eating-clean {
+    height: auto;
+    border-radius: 0;
+  }
+
+  .heading-image-eating-clean img {
+    height: 300px;
+  }
+
+  .heading-text-eating-clean {
+    font-size: 20px;
+    top: 40%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .editorial-text h2 {
+    font-size: 32px;
+  }
+
+  .editorial-text-content h2 {
+    font-size: 20px;
+  }
+
+  .comments-profile,
+  .top-comments-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .comments-profile img,
+  .top-comments-profile img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .leave-comment input {
+    width: 100%;
   }
 }

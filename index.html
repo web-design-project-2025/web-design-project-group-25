@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shape Shifter</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <!--LOADING FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,17 +32,23 @@
     />
   </head>
   <body>
+    <!--WEBSITE HEADER-->
     <header class="navbar">
-      <a href="home.html">
+      <a href="index.html">
         <img class="logo" src="images/logo.png" alt="logo" />
       </a>
+      <!--HEADER BUTTONS, they have two divs for the responsivness on mobile-->
       <nav class="nav">
-        <a href="home.html" class="active">Home</a>
-        <a href="articles-main.html">Articles</a>
-        <a href="workouts.html">Workouts</a>
-        <a href="exercises.html">Exercises</a>
-        <a href="about-us.html">About Us</a>
-        <a href="log-in.html">Log In</a>
+        <div class="nav2">
+          <a href="index.html" class="active">Home</a>
+          <a href="articles-main.html">Articles</a>
+          <a href="workouts.html">Workouts</a>
+        </div>
+        <div class="nav2">
+          <a href="exercises.html">Exercises</a>
+          <a href="about-us.html">About Us</a>
+          <a href="log-in.html">Log In</a>
+        </div>
       </nav>
 
       <div class="icons">
@@ -50,6 +57,9 @@
         <img src="images/twitter.png" />
       </div>
     </header>
+    <!--WEBSITE HEADER ENDS-->
+
+    <!--start image and overlapping header-->
     <img
       class="home-img"
       src="images/home-image.png"
@@ -62,6 +72,7 @@
       <h2>find exercises & motavation tailored to your goals</h2>
     </div>
 
+    <!--this section tells you about the latest articles and muscle group exercises-->
     <section class="home-icons-flex">
       <div class="home-icons">
         <img src="images/Trophey.png" alt="Latest articles icon" />
@@ -80,7 +91,7 @@
           src="images/weight-lifting.png"
           alt="Group muscles exercises icon"
         />
-        <h1 class="home-header1">Group Muscle Exercises</h1>
+        <h1 class="home-header1">Muscle Group Exercises</h1>
         <p>
           Find exercises categorized by muscle group to target specific areas
           and create a balanced training routine that supports overall
@@ -91,10 +102,12 @@
         </nav>
       </div>
     </section>
+
+    <!--this section is about the workouts page-->
     <section class="home-workouts">
       <div>
         <h1>Try our calendar for personalized workouts</h1>
-        <h2 class="home-header1">Smart Sceduling Made for You!</h2>
+        <h2 class="home-subheader1">Smart Scheduling Made for You!</h2>
         <p>
           Take the guesswork out of your fitness journey! Our personalized
           calendar helps you stay consistent by generating daily workout plans
@@ -107,9 +120,10 @@
       <div class="home-star">
         <img src="images/star.png" alt="Star icon" />
       </div>
-      <img src="images/Vector.png" alt="Ecercises image" />
+      <img class="home-vector" src="images/Vector.png" alt="Ecercises image" />
     </section>
 
+    <!--this part is about the exercises page-->
     <div class="home-muscle-groups">
       <p>
         Want to focus on arms, legs, core, or back? Choose a muscle group and
@@ -142,30 +156,23 @@
       <a href="exercises.html">View all exercises</a>
     </nav>
 
-    <div class="home-collage">
-      <img src="images/home1.png" alt="collage picture 1" />
-      <div>
-        <div class="homecollage1">
-          <img src="images/home2.png" alt="collage picture 2" />
-          <img src="images/home3.png" alt="collage picture 3" />
-        </div>
-        <img src="images/home4.png" alt="collage picture 4" />
-      </div>
-      <div class="home-header3">
-        <h1>Explore numerous articles about</h1>
-        <p>
-          nutrition, tops on improving your workouts, recovery strategies and
-          many more
-        </p>
-        <nav class="home-read-more">
-          <a href="articles-main.html" class="active">Read</a>
-        </nav>
-      </div>
+    <!--this part is about the articles page-->
+    <img src="images/collage for home page.png" alt="collage picture 1" />
+    <div class="home-header3">
+      <h1>Explore numerous articles about</h1>
+      <p>
+        NUTRITION, TIPS ON IMPROVING YOUR WORKOUTS, RECOVERY STRATEGIES AND MANY
+        MORE
+      </p>
+      <nav class="home-read-more">
+        <a href="articles-main.html" class="active">Read</a>
+      </nav>
     </div>
 
+    <!--WEBSITE FOOTER STARTS-->
     <footer class="footer">
       <div class="footer-left">
-        <a href="home.html" class="logo-footer">
+        <a href="index.html" class="logo-footer">
           <img src="images/logo.png" />
         </a>
         <p class="mission">
@@ -192,7 +199,7 @@
         </div>
         <div class="about">
           <h4>ABOUT</h4>
-          <a href="home.html">Home</a>
+          <a href="index.html">Home</a>
           <a href="articles.html">Articles</a>
           <a href="workouts.html">Workouts</a>
           <a href="exercises.html">Exercises</a>

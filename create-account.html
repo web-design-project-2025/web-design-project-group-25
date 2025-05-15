@@ -5,23 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create account</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chivo&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap"
       rel="stylesheet"
     />
   </head>
   <body class="login-background">
     <header class="navbar">
-      <a href="home.html">
+      <a href="index.html">
         <img class="logo" src="images/logo.png" alt="logo" />
       </a>
       <nav class="nav">
-        <a href="home.html">Home</a>
-        <a href="articles-main.html">Articles</a>
-        <a href="workouts.html">Workouts</a>
-        <a href="exercises.html">Exercises</a>
-        <a href="about-us.html">About Us</a>
-        <a href="log-in.html">Log In</a>
+        <div class="nav2">
+          <a href="index.html">Home</a>
+          <a href="articles-main.html" class="active">Articles</a>
+          <a href="workouts.html">Workouts</a>
+        </div>
+        <div class="nav2">
+          <a href="exercises.html">Exercises</a>
+          <a href="about-us.html">About Us</a>
+          <a href="log-in.html">Log In</a>
+        </div>
       </nav>
 
       <div class="icons">
@@ -34,16 +58,36 @@
     <main>
       <div class="box">
         <h2>CREATE ACCOUNT</h2>
-        <a href="#" class="rectangle">Email</a>
-        <a href="#" class="rectangle">Password</a>
-        <a href="#" class="rectangle">Password again</a>
-        <a href="#" class="button">Create Account</a>
-        <div class="or-text">or sign up with</div>
+        <form id="signup-form">
+          <input
+            type="email"
+            id="signup-email"
+            placeholder="Email"
+            class="rectangle"
+            required
+          />
+          <input
+            type="password"
+            id="signup-password"
+            placeholder="Password"
+            class="rectangle"
+            required
+          />
+          <input
+            type="password"
+            id="signup-confirm"
+            placeholder="Password again"
+            class="rectangle"
+            required
+          />
+          <button type="submit" class="button">Create Account</button>
+        </form>
         <div class="icons-second">
           <img src="images/gmail.png" />
           <img src="images/windows-logo.png" />
           <img src="images/apple-logo.png" />
         </div>
+        <div class="or-text">or sign up with</div>
         <div class="login">
           <a>Have an account?</a>
           <a href="log-in.html" class="login-link">Log In</a>
@@ -53,7 +97,7 @@
 
     <footer class="footer">
       <div class="footer-left">
-        <a href="home.html" class="logo-footer">
+        <a href="index.html" class="logo-footer">
           <img src="images/logo.png" />
         </a>
         <p class="mission">
@@ -62,7 +106,7 @@
         </p>
         <div class="contact-info">
           <p>info@shapeshifter.com</p>
-          <div class="buttom-icons">
+          <div class="bottom-icons">
             <a><img src="images/facebook.png" alt="Facebook" /></a>
             <a><img src="images/instagram.png" alt="Instagram" /></a>
             <a><img src="images/twitter.png" alt="Twitter" /></a>
@@ -80,12 +124,13 @@
         </div>
         <div class="about">
           <h4>ABOUT</h4>
-          <a href="home.html">Home</a>
+          <a href="index.html">Home</a>
           <a href="articles.html">Articles</a>
           <a href="workouts.html">Workouts</a>
           <a href="exercises.html">Exercises</a>
         </div>
       </div>
     </footer>
+    <script src="js/auth.js"></script>
   </body>
 </html>
