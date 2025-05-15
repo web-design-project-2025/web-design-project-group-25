@@ -1198,7 +1198,7 @@ body {
 }
 
 /*responsiveness for articles-health-nutrition */
-@media (max-width: 375px) {
+@media (max-width: 700px) {
   .highlighted-nutrition-article {
     height: 320px;
     border-bottom-left-radius: 30px;
@@ -1206,11 +1206,9 @@ body {
   }
 
   .highlighted-text-nutrition {
-    font-size: 20px;
-    top: 55%;
+    font-size: 15px;
     max-width: 90%;
     text-align: left;
-    padding: 0 10px;
   }
 
   .highlighted-text-nutrition-background {
@@ -1220,6 +1218,8 @@ body {
 
   .highlighted-image-nutrition img {
     object-position: center;
+    object-fit: cover;
+    height: 100%;
   }
 
   .main-content {
@@ -2341,74 +2341,49 @@ img {
 }
 
 /* responsiveness for editorial page*/
-@media (max-width: 1024px) {
-  .main-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .editorial-section {
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .editorial {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-  }
-
-  .editorial img,
-  .editorial-text p,
-  .editorial-text-content p,
-  .editorial-text-content h2,
-  .breadcrumb p {
-    width: 100%;
-  }
-
-  .comments {
-    width: 100%;
-    padding: 20px;
-  }
-
+@media (max-width: 775px) {
   .heading-eating-clean {
-    height: auto;
-    border-radius: 0;
+    height: 320px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .heading-text-eating-clean-background {
+    top: 160px;
+    padding: 90px 0;
   }
 
   .heading-image-eating-clean img {
-    height: 300px;
+    object-position: center;
+    object-fit: cover;
+    height: 100%;
   }
 
-  .heading-text-eating-clean {
-    font-size: 20px;
-    top: 40%;
-    left: 5%;
-  }
-}
-
-@media (max-width: 600px) {
-  .editorial-text h2 {
-    font-size: 32px;
-  }
-
-  .editorial-text-content h2 {
-    font-size: 20px;
-  }
-
-  .comments-profile,
-  .top-comments-profile {
+  .main-content {
     flex-direction: column;
-    align-items: flex-start;
   }
 
-  .comments-profile img,
-  .top-comments-profile img {
-    width: 60px;
-    height: 60px;
+  .editorial,
+  .comments {
+    width: 100%;
   }
 
-  .leave-comment input {
+  .comments-profiles {
+    width: 100%;
+  }
+
+  .editorial img {
+    width: 350px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .editorial-text-content p {
+    width: 100%;
+  }
+
+  .editorial-text p,
+  h2 {
     width: 100%;
   }
 }
