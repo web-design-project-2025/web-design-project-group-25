@@ -20,10 +20,8 @@ body {
 .nav2 {
   display: flex;
 }
-
 .nav {
   display: flex;
-  gap: 20px;
 }
 
 .nav a {
@@ -2005,13 +2003,8 @@ img {
   font-size: 14pt;
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 100px;
   text-decoration: none;
-}
-
-.home-collage {
-  width: 600px;
-  display: flex;
-  margin-top: 50px;
 }
 
 .home-header3 {
@@ -2019,6 +2012,7 @@ img {
   text-align: right;
   position: absolute;
   right: 30px;
+  translate: 0px -670px;
 }
 
 .home-header3 h1 {
@@ -2044,20 +2038,32 @@ img {
     width: 100%;
   }
   .home-header {
-    translate: 0px 230px;
+    translate: 0px 250px;
     margin-bottom: 100px;
   }
   .home-header h1 {
-    font-size: 30pt;
+    font-size: 20pt;
   }
   .home-header h2 {
     font-size: 12pt;
   }
+
+  .home-workouts {
+    flex-direction: column;
+  }
+  .home-workouts p {
+    margin-right: 30px;
+  }
+  .home-star {
+    translate: 210px -370px;
+  }
+  .home-vector {
+    translate: -25px -75px;
+  }
   .home-muscle-groups h1 {
     position: static;
     text-align: start;
-    font-size: 18pt;
-    max-width: 200px;
+    font-size: 40pt;
   }
   .home-muscle-groups {
     flex-direction: column;
@@ -2066,14 +2072,14 @@ img {
     flex-direction: column;
   }
   .home-header3 {
+    translate: 0px 0px;
+    margin-bottom: 50px;
+  }
+  .home-header3 {
     position: static;
     text-align: start;
     max-width: 300px;
     margin-left: 20px;
-  }
-
-  .home-collage {
-    flex-direction: column;
   }
 }
 
