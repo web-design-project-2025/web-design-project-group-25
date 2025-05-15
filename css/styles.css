@@ -1,4 +1,4 @@
-/*header starts*/
+/* Header styling starts*/
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -71,6 +71,7 @@ body {
   font-weight: bold;
 }
 
+/* Hedear Responsiveness */
 @media screen and (max-width: 900px) {
   .navbar {
     padding-top: 10px;
@@ -103,7 +104,7 @@ body {
   }
 }
 
-/*footer starts*/
+/* Footer styling starts*/
 .footer {
   background-color: #4267cc;
   color: white;
@@ -175,7 +176,7 @@ body {
   text-decoration: underline;
 }
 
-/*articles-workouts styling starts*/
+/*Articles-workouts styling starts*/
 /*----- under header menu -----*/
 
 .under-header {
@@ -415,7 +416,7 @@ body {
   margin-right: 30px;
 }
 
-/*articles-main styling starts*/
+/*Articles-main styling starts*/
 /*----- recommended article section -----*/
 .recommended-article {
   position: relative;
@@ -650,7 +651,7 @@ body {
   font-size: 14px;
 }
 
-/* popular article section */
+/* ----- popular article section -----*/
 
 .popular-section {
   padding: 40px 0px;
@@ -752,7 +753,7 @@ body {
   gap: 10px;
 }
 
-/*responsiveness for this section*/
+/*responsiveness for popular article section*/
 @media screen and (max-width: 768px) {
   .popular-content {
     flex-direction: column;
@@ -818,7 +819,7 @@ body {
   }
 }
 
-/*articles-health styling starts*/
+/*Articles-health styling starts*/
 /*----- health section -----*/
 
 .health {
@@ -987,7 +988,7 @@ body {
   font-size: 13px;
 }
 
-/*articles-health-nutrition styling starts*/
+/*Articles-health-nutrition styling starts*/
 /*highlighted nutrition article*/
 
 .highlighted-nutrition-article {
@@ -1080,7 +1081,7 @@ body {
   color: #1e68d3;
 }
 
-/*top comments section */
+/*-----top comments section----- */
 
 .top-comments {
   width: 40%;
@@ -1145,7 +1146,7 @@ body {
   margin-top: 8px;
 }
 
-/* author section */
+/* ----- author section ------*/
 
 .become-author {
   font-family: Chivo;
@@ -1250,8 +1251,8 @@ body {
   }
 }
 
-/*exrcises styling starts*/
-/* equipment options */
+/*Exrcises styling starts*/
+/* ----- equipment options ----- */
 
 .main-content-exercises {
   display: flex;
@@ -1329,7 +1330,7 @@ body {
   height: 50px;
 }
 
-/* muscle group */
+/* ----- muscle group ----- */
 
 .muscle-groups {
   background-color: #fafaf9;
@@ -1406,7 +1407,7 @@ body {
   }
 }
 
-/*----- log in styling -----*/
+/*----- Log in styling -----*/
 
 main {
   display: flex;
@@ -1431,6 +1432,7 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .box {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 40px;
@@ -1528,7 +1530,7 @@ h2 {
   font-family: "Chivo";
 }
 
-/*about us page*/
+/*About us page styling*/
 .about-page {
   display: flex;
   justify-content: center;
@@ -1572,7 +1574,8 @@ h2 {
 .SS-description p {
   font-size: 22px;
 }
-.about-page-buttom {
+
+.about-page-bottom {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1580,24 +1583,25 @@ h2 {
   margin: 150px auto 50px auto;
   gap: 40px;
 }
-.about-page-buttom a {
+
+.about-page-bottom a {
   font-family: "Chivo", Arial, sans-serif;
   font-size: 20px;
 }
+
 .about-page-icons img {
   width: 50px;
   margin-top: 10px;
 }
-.about-page-buttom-right p {
+
+.about-page-bottom-right p {
   margin-left: 0;
   font-family: "Chivo", Arial, sans-serif;
   text-align: left;
 }
-/**/
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
-}
+
+/* Workouts-selection slyling starts */
+
 .page {
   max-width: 800px;
   margin: 20px auto;
@@ -1606,16 +1610,20 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* ttl - title */
 .section-ttl {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
+
 .equipment-list,
 .muscle-group-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
+
 label {
   display: flex;
   align-items: center;
@@ -1625,20 +1633,25 @@ label {
   border-radius: 5px;
   cursor: pointer;
 }
+
 input[type="radio"] {
   margin-right: 5px;
 }
+
 .checkbox {
   margin-right: 8px;
 }
+
 .body-diagram {
   text-align: center;
   margin: 20px 0;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .selection {
   margin-top: 20px;
   padding: 10px;
@@ -1647,6 +1660,7 @@ img {
 }
 
 /*----- Workouts styling -----*/
+/* upper banner */
 
 .workoutH {
   font-family: Bebas Neue;
@@ -1685,6 +1699,7 @@ img {
   margin-bottom: 0px;
 }
 
+/* week days list */
 .days {
   margin-top: 50px;
   padding-left: 0px;
@@ -1703,6 +1718,7 @@ img {
   text-decoration: none;
 }
 
+/* left part with the workouts generator */
 .exercises-workout {
   background: #0a287e;
   margin-left: 100px;
@@ -1794,6 +1810,8 @@ img {
   color: #fff;
 }
 
+/* Responsiveness for workouts page */
+
 @media screen and (max-width: 900px) {
   .workouts-background {
     flex-direction: column;
@@ -1837,7 +1855,7 @@ img {
 }
 
 /*----- Home styling -----*/
-
+/* banner in the top part of the page */
 .home-header h1 {
   font-family: Bebas Neue;
   font-weight: 100;
@@ -1857,6 +1875,7 @@ img {
   margin: 5px 5px;
 }
 
+/*second part with two recommended features */
 .home-icons {
   text-align: center;
   margin-bottom: 70px;
@@ -1909,6 +1928,7 @@ img {
   transform: scale(1.05);
 }
 
+/* calendar with workouts presentation */
 .home-workouts {
   background: #ddf2ff;
   padding-left: 20px;
@@ -1941,6 +1961,8 @@ img {
   padding: 0px;
   translate: -120px 10px;
 }
+
+/* exercises based on muscle groups presentation */
 
 .home-muscle-groups {
   display: flex;
@@ -2037,6 +2059,7 @@ img {
   color: #0a287e;
 }
 
+/* responsiveness for home page */
 @media screen and (max-width: 900px) {
   .home-icons-flex {
     flex-direction: column;
@@ -2091,7 +2114,7 @@ img {
   }
 }
 
-/*editorial page styling starts*/
+/*Editorial page styling starts*/
 /*heading for the article*/
 
 .heading-eating-clean {
@@ -2134,7 +2157,7 @@ img {
   max-width: 900px;
 }
 
-/*content article*/
+/*content of the article*/
 
 .main-content {
   display: flex;
@@ -2315,4 +2338,77 @@ img {
   cursor: pointer;
   font-family: Chivo;
   font-weight: bold;
+}
+
+/* responsiveness for editorial page*/
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .editorial-section {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .editorial {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .editorial img,
+  .editorial-text p,
+  .editorial-text-content p,
+  .editorial-text-content h2,
+  .breadcrumb p {
+    width: 100%;
+  }
+
+  .comments {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .heading-eating-clean {
+    height: auto;
+    border-radius: 0;
+  }
+
+  .heading-image-eating-clean img {
+    height: 300px;
+  }
+
+  .heading-text-eating-clean {
+    font-size: 20px;
+    top: 40%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .editorial-text h2 {
+    font-size: 32px;
+  }
+
+  .editorial-text-content h2 {
+    font-size: 20px;
+  }
+
+  .comments-profile,
+  .top-comments-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .comments-profile img,
+  .top-comments-profile img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .leave-comment input {
+    width: 100%;
+  }
 }
