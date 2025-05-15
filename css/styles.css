@@ -332,7 +332,7 @@ body {
   color: #fbe9e4;
   font-family: Bebas Neue;
   font-size: 38px;
-  padding: 10px 25px;
+  padding: 10px 50px;
   display: inline-block;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -498,6 +498,7 @@ body {
   }
 
   .recommended-article-card {
+    margin-top: 10px;
     padding: 20px;
     text-align: center;
   }
@@ -656,18 +657,6 @@ body {
 .popular-section {
   padding: 40px 0px;
   background-color: white;
-}
-
-.popular-label {
-  background-color: #052d7c;
-  color: white;
-  font-family: Bebas Neue;
-  font-size: 26px;
-  padding: 8px 30px;
-  display: inline-block;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-  margin-bottom: 30px;
 }
 
 .popular-content {
@@ -1530,6 +1519,79 @@ h2 {
   font-family: "Chivo";
 }
 
+/* responsiveness for log in page */
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px 150px 20px;
+    height: auto;
+  }
+
+  .box {
+    padding: 50px 30px;
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .box h2 {
+    font-size: 36px;
+  }
+
+  .rectangle {
+    font-size: 16px;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .icons-second {
+    gap: 15px;
+  }
+
+  .icons-second img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .login {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    padding: 40px 30px;
+  }
+
+  .box h2 {
+    font-size: 30px;
+  }
+
+  .rectangle {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+  .icons-second img {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+  }
+
+  .or-text,
+  .login {
+    font-size: 12px;
+  }
+}
+
 /*About us page styling*/
 .about-page {
   display: flex;
@@ -1598,6 +1660,76 @@ h2 {
   margin-left: 0;
   font-family: "Chivo", Arial, sans-serif;
   text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .about-page {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin: 60px 20px;
+  }
+
+  .about-page-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 100px 20px 40px 20px;
+  }
+
+  .SS-description {
+    padding: 0 20px;
+  }
+
+  .SS-description p {
+    font-size: 20px;
+  }
+
+  .about-page-bottom a {
+    text-align: center;
+  }
+
+  .about-page-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .about-page-bottom-right p {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .user-card img {
+    width: 120px;
+    height: 160px;
+  }
+
+  .user-name {
+    font-size: 26px;
+  }
+
+  .user-title {
+    font-size: 22px;
+  }
+
+  .SS-description p {
+    font-size: 18px;
+  }
+
+  .about-page-icons img {
+    width: 40px;
+  }
+
+  .about-page-bottom a {
+    font-size: 18px;
+  }
+
+  .about-page-bottom-right p {
+    font-size: 16px;
+  }
 }
 
 /* Workouts-selection slyling starts */
