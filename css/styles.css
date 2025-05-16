@@ -1801,7 +1801,7 @@ img {
   font-size: 50px;
   margin-left: 30px;
   margin-bottom: 0px;
-  translate: 0px -230px;
+  translate: 130px -550px;
 }
 
 .workout-txt {
@@ -1811,7 +1811,7 @@ img {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 30px;
-  translate: 0px -230px;
+  translate: 130px -550px;
 }
 
 .workout-txt-margin {
@@ -1948,6 +1948,14 @@ img {
   .workouts-background {
     flex-direction: column;
     padding-bottom: 200px;
+    margin-right: 0px;
+  }
+  .workoutH {
+    translate: 0px -200px;
+  }
+
+  .workout-txt {
+    translate: 0px -200px;
   }
   .days {
     margin-top: -40px;
